@@ -41,17 +41,8 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Water
+  - name: 
     uniqueID: 2635365905
-    locked: 0
-  - name: Ground
-    uniqueID: 1701340987
-    locked: 0
-  - name: Collision
-    uniqueID: 2873910707
-    locked: 0
-  - name: Player
-    uniqueID: 2168005933
     locked: 0
   m_RenderingLayers:
   - Default
