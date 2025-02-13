@@ -36,4 +36,15 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("InputX", moveInput.x);
         animator.SetFloat("InputY", moveInput.y);
     }
+
+    public Vector2 GetLastInputDirection()
+    {
+        Vector2 lastInput = new Vector2(animator.GetFloat("LastInputX"), animator.GetFloat("LastInputY"));
+        if(lastInput == Vector2.zero)
+        {
+            lastInput = Vector2.up; // default direction if needed
+        }
+        return lastInput.normalized;
+    }
+
 }

@@ -2351,6 +2351,7 @@ GameObject:
   - component: {fileID: 1654201964}
   - component: {fileID: 1654201969}
   - component: {fileID: 1654201970}
+  - component: {fileID: 1654201971}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -2630,6 +2631,24 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.75, y: 0.34683368}
   m_EdgeRadius: 0
+--- !u!114 &1654201971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654201963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15e5628aeaee948f9a2c230eca71ef4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fishingHookPrefab: {fileID: 0}
+  castDistanceMultiplier: 5
+  maxCharge: 3
+  chargeSpeed: 1
+  fovAngle: 60
+  lineRenderer: {fileID: 0}
 --- !u!1 &1813498884
 GameObject:
   m_ObjectHideFlags: 0
