@@ -78,7 +78,6 @@ public class InventoryManager : MonoBehaviour
 
     private void InitializeInventory()
     {
-        // Log inventory UI components for debugging
         Debug.Log($"Initializing Inventory - Panel: {(inventoryPanel != null ? "Found" : "Missing")}, " +
                   $"SlotsParent: {(inventorySlotsParent != null ? "Found" : "Missing")}, " +
                   $"SlotPrefab: {(inventorySlotPrefab != null ? "Found" : "Missing")}");
@@ -99,7 +98,7 @@ public class InventoryManager : MonoBehaviour
             }
 
             GameObject slotObj = Instantiate(inventorySlotPrefab, inventorySlotsParent);
-            slotObj.name = $"InventorySlot_{i}";  // Give a unique name for easier debugging
+            slotObj.name = $"InventorySlot_{i}";
             
             InventorySlot slot = slotObj.GetComponent<InventorySlot>();
             if (slot == null)

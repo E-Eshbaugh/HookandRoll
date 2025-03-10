@@ -16,7 +16,6 @@ public class HotbarManager : MonoBehaviour
     private List<HotbarSlot> hotbarSlots = new List<HotbarSlot>();
     private int selectedSlotIndex = 0;
     
-    // Reference to your automation game systems
     [SerializeField] private PlacingMode placingMode;
     
     private void Awake()
@@ -106,13 +105,11 @@ public class HotbarManager : MonoBehaviour
             selectedSlotIndex = index;
             UpdateSelectionHighlight();
             
-            // Update your game's placing mode based on selected item
             Item selectedItem = GetSelectedItem();
             
-            // For your automation game - change the placement mode based on selected item
+            // Change the placement mode based on selected item
             if (selectedItem != null && placingMode != null)
             {
-                // Example logic - update with your specific item types and placement modes
                 switch (selectedItem.id)
                 {
                     // IDs for placeable structures like conveyors, storage, etc.

@@ -97,8 +97,7 @@ public class PlayerInteraction : MonoBehaviour
     private bool IsPlaceableItem(int itemId)
     {
         // Define which item IDs correspond to placeable structures
-        // This should match your game's item database
-        return (itemId == 1 || itemId == 2 || itemId == 3); // Example: 1=conveyor, 2=storage, 3=processor
+        return (itemId == 1 || itemId == 2 || itemId == 3); // Example: 1=conveyor, 2=storage, 3=machine
     }
     
     private void UpdatePlacementPreview(Vector3 position)
@@ -116,9 +115,6 @@ public class PlayerInteraction : MonoBehaviour
                     break;
                 case 2: // Storage
                     prefab = Resources.Load<GameObject>("Prefabs/Storage");
-                    break;
-                case 3: // Processor
-                    prefab = Resources.Load<GameObject>("Prefabs/Processor");
                     break;
             }
             
