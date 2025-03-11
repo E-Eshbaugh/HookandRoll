@@ -6,7 +6,7 @@ public class CameraController : MonoBehaviour
     public float smoothTime = 0.3f;
     private Vector3 _velocity = Vector3.zero; 
     public Vector3 offset;
-    
+
     void LateUpdate()
     {
         if (target != null)

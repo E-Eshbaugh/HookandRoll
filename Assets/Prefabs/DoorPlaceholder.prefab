@@ -147,6 +147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00709d9031598b94c80dbeb18f539604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Inside
-  playerPosistion: {x: -4.5, y: 0}
+  sceneToLoad: 
+  playerPosistion: {x: 0, y: 0}
   playerInitialPos: {fileID: 11400000, guid: d2f94d56b6c695145acb8c34245a3101, type: 2}
