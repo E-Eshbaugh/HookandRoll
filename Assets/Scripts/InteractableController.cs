@@ -1,16 +1,18 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class InteractableController : MonoBehaviour
 {
-    public TextMeshProUGUI interactionText;
+    public GameObject interactionText;
     public bool playerInRange = false;
     public bool interact = false;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public string sceneToLoad;
+    
     void Start()
     {
         if (interactionText != null)
         {
-            interactionText.gameObject.SetActive(false); // Hide text at the start
+            interactionText.SetActive(false); // Hide text at the start
         }
     }
 
@@ -28,7 +30,7 @@ public class InteractableController : MonoBehaviour
         if (other.CompareTag("Player")) // Ensure player has the correct tag
         {
             playerInRange = true;
-           interactionText.gameObject.SetActive(true);
+            interactionText.SetActive(true);
            
         }
     }
@@ -38,12 +40,13 @@ public class InteractableController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = false;
-            interactionText.gameObject.SetActive(false);
+            interactionText.SetActive(false);
         }
     }
 
     private void Interact()
     {
        interact = true;
+       SceneManager.LoadScene(sceneToLoad);
     }
 }
