@@ -3927,6 +3927,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!95 &1805117578 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4284556437338149322, guid: 4b3f0ef12d3f28945a4c47e4c7124f95, type: 3}
+  m_PrefabInstance: {fileID: 7542909630300845922}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1980956965
 GameObject:
   m_ObjectHideFlags: 0
@@ -4084,6 +4089,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1469423420932052304, guid: 4b3f0ef12d3f28945a4c47e4c7124f95, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1805117578}
     - target: {fileID: 3541757254586772205, guid: 4b3f0ef12d3f28945a4c47e4c7124f95, type: 3}
       propertyPath: m_Name
       value: Knife
@@ -4127,6 +4136,10 @@ PrefabInstance:
     - target: {fileID: 5082138116732830053, guid: 4b3f0ef12d3f28945a4c47e4c7124f95, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 5180925645272742077, guid: 4b3f0ef12d3f28945a4c47e4c7124f95, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -6,6 +6,7 @@ public class ObjectClickMove : MonoBehaviour
     private bool isDragging = false;
     private Collider2D col;
     public bool canPickup = false;
+    public Animator animator;
 
     void Start()
     {
@@ -24,19 +25,23 @@ public class ObjectClickMove : MonoBehaviour
             canPickup = false;
         }
 
+        if (isDragging)
+        {
+            transform.position = new Vector3(mousePos.x, mousePos.y, 0f);
+            if (Input.GetMouseButtonDown(0)){
+                animator.SetTrigger("Click");
+            }
+            
+        }
+
         if (Input.GetMouseButtonDown(0) && canPickup)
         {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (hit.collider != null && hit.collider.gameObject == gameObject && !isDragging)
             {
                 isDragging = true;
-                transform.Rotate(0f, 0f, -90f);
+                animator.SetTrigger("PickedUp");
             }
-        }
-
-        if (isDragging)
-        {
-            transform.position = new Vector3(mousePos.x, mousePos.y, 0f);
         }
     }
 }
