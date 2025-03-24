@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveInput;
     private Animator animator;
     public VectorValue startPosition;
+    public string targetSceneName = "inside";
+    public SpriteRenderer spriteRenderer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,6 +24,16 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         rb.linearVelocity = moveInput * moveSpeed;
+
+        if (SceneManager.GetActiveScene().name == targetSceneName)
+        {
+            if (spriteRenderer != null)
+            {
+
+                spriteRenderer.transform.localScale *= 2;
+                Debug.Log("Sprite size doubled in scene: " + targetSceneName);
+            }
+        }
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -44,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
         Vector2 lastInput = new Vector2(animator.GetFloat("LastInputX"), animator.GetFloat("LastInputY"));
         if(lastInput == Vector2.zero)
         {
-            lastInput = Vector2.up; // default direction if needed
+            lastInput = Vector2.up;
         }
         return lastInput.normalized;
     }
