@@ -7640,7 +7640,6 @@ GameObject:
   - component: {fileID: 1654201964}
   - component: {fileID: 1654201969}
   - component: {fileID: 1654201970}
-  - component: {fileID: 1654201971}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -7920,30 +7919,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.75, y: 0.34683368}
   m_EdgeRadius: 0
---- !u!114 &1654201971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654201963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fdccf4635b9e44c89ebb4a7c87bb7d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerAnim: {fileID: 1654201969}
-  isFishing: 0
-  poleBack: 0
-  throwBobber: 0
-  fishingPoint: {fileID: 0}
-  bobber: {fileID: 8246347531559867352, guid: 31af9853a39c142cbacab5964a1909b9, type: 3}
-  targetTime: 0
-  savedTargetTime: 0
-  extraBobberDistance: 0
-  fishGame: {fileID: 0}
-  timeTillCatch: 0
-  winnerAnim: 0
 --- !u!1 &1813498884
 GameObject:
   m_ObjectHideFlags: 0
