@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 8487076687179068001}
   - component: {fileID: 6520311295596471655}
   - component: {fileID: 4268112442825336007}
-  - component: {fileID: 5851986545814095389}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -327,25 +326,6 @@ MonoBehaviour:
   fishGame: {fileID: 0}
   timeTillCatch: 0
   winnerAnim: 0
---- !u!114 &5851986545814095389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7221544773631154682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3b92e391bc2c47fab8accdccaa40f29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isFishing: 0
-  poleBack: 0
-  throwBobber: 0
-  targetTime: 4
-  savedTargetTime: 0
-  extraBobberDistance: 0
-  timeTillCatch: 0
 --- !u!1001 &1540910704982890243
 PrefabInstance:
   m_ObjectHideFlags: 0
