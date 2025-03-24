@@ -15,4 +15,4 @@ MonoBehaviour:
   id: 0
   prefab: {fileID: 0}
   type: 3
-  description: A basic fishing rod
+  description: A conveyer belt to move items

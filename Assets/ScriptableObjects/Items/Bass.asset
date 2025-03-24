@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 0
   prefab: {fileID: 0}
   type: 0
-  description: 
-  size: 0
+  description: A small bass
+  size: 0.12

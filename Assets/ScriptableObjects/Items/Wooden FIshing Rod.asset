@@ -15,5 +15,6 @@ MonoBehaviour:
   id: 0
   prefab: {fileID: 0}
   type: 1
-  description: 
-  quality: 0
+  description: A basic fishing rod
+  quality: 0.1
+  durability: 0
