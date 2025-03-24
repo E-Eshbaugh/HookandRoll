@@ -21758,8 +21758,35 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7221544773631154682, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3189891295874378389}
   m_SourcePrefab: {fileID: 100100000, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
+--- !u!1 &3189891295874378388 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7221544773631154682, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
+  m_PrefabInstance: {fileID: 3189891295874378387}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3189891295874378389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3189891295874378388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b92e391bc2c47fab8accdccaa40f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFishing: 0
+  poleBack: 0
+  throwBobber: 0
+  targetTime: 4
+  savedTargetTime: 0
+  extraBobberDistance: 0
+  timeTillCatch: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
