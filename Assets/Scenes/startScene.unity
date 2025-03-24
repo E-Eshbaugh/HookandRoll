@@ -198,6 +198,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &115299584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5932348448321520901, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
+  m_PrefabInstance: {fileID: 3189891295874378387}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &263967803
 GameObject:
   m_ObjectHideFlags: 0
@@ -21147,6 +21152,11 @@ Transform:
   - {fileID: 1336521324}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -25}
+--- !u!4 &2030826267 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1201924134412561395, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
+  m_PrefabInstance: {fileID: 3189891295874378387}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2054995301
 GameObject:
   m_ObjectHideFlags: 0
@@ -21695,6 +21705,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4268112442825336007, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
+      propertyPath: fishGame
+      value: 
+      objectReference: {fileID: 115299584}
+    - target: {fileID: 4268112442825336007, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
+      propertyPath: playerAnim
+      value: 
+      objectReference: {fileID: 3189891295874378393}
+    - target: {fileID: 4268112442825336007, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
+      propertyPath: fishingPoint
+      value: 
+      objectReference: {fileID: 2030826267}
     - target: {fileID: 4726919475553391703, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
       propertyPath: startPosition
       value: 
@@ -21755,38 +21777,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8487076687179068001, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: fdbecf9e7f5eda8469df9e8a2f453805, type: 2}
+    - target: {fileID: 8596588197533097895, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
+      propertyPath: playerS
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7221544773631154682, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3189891295874378389}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
---- !u!1 &3189891295874378388 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7221544773631154682, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
+--- !u!95 &3189891295874378393 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8487076687179068001, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
   m_PrefabInstance: {fileID: 3189891295874378387}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3189891295874378389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3189891295874378388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3b92e391bc2c47fab8accdccaa40f29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isFishing: 0
-  poleBack: 0
-  throwBobber: 0
-  targetTime: 4
-  savedTargetTime: 0
-  extraBobberDistance: 0
-  timeTillCatch: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
