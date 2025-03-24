@@ -20,6 +20,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cutting.unity
     guid: c9b326fb2a2f8e246bee2f79c0fbf41c
+  - enabled: 1
+    path: Assets/Scenes/Crates.unity
+    guid: e817e7da6b49d0d418a4cc1957222e23
+  - enabled: 1
+    path: Assets/Scenes/Fridge.unity
+    guid: 78ad6880a61da0143a231f552872b16c
+  - enabled: 1
+    path: Assets/Scenes/RollingStation.unity
+    guid: 9dd450753d95da748aded00b9eef397d
+  - enabled: 1
+    path: Assets/Scenes/Stove.unity
+    guid: 75195c86c5079cd44b9c8201db7e172c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
