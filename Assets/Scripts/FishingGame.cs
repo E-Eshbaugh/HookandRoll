@@ -9,6 +9,7 @@ public class fishingGame : MonoBehaviour
     public bool atTop;
     public float targetTime = 4.0f;
     public float savedTargetTime;
+    public bool spaceBar = false;
 
     public GameObject p1;
     public GameObject p2;
@@ -194,7 +195,11 @@ public class fishingGame : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             rb.AddForce(Vector2.up*(2.0f));
+            spaceBar = true;
+        } else {
+            spaceBar = false;
         }
+
         if (Input.GetKey(KeyCode.Escape))
         {
             playerS.fishGameLost();

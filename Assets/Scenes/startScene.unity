@@ -21705,6 +21705,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3856388187102232577, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4268112442825336007, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
       propertyPath: fishGame
       value: 
