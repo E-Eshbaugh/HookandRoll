@@ -171,13 +171,10 @@ public class fishingGame : MonoBehaviour
 
         // Debug current positions
 
-        // Use player's Y position as the reference point instead of a fixed height
-        // Apply stronger upward force when below the limit
         if (rbCoords.y < playerPosition.y - travelDist)
         {
             atTop = false; 
         }
-        // Check upper limit only if not currently recovering from being below
         else if (rbCoords.y > playerPosition.y + travelDist)
         {
             atTop = true;
