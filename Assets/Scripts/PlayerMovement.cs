@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         transform.position = startPosition.initialValue;
+        transform.localScale = new Vector3(1f, 1f, 1f);
     }
 
     // Update is called once per frame
