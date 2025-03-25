@@ -1,7 +1,6 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class fishing : MonoBehaviour
 {
@@ -12,6 +11,7 @@ public class fishing : MonoBehaviour
     public bool throwBobber;
     public Transform fishingPoint;
     public GameObject bobber;
+    public Rigidbody2D player;
 
     public float targetTime = 0.0f;
     public float savedTargetTime;
@@ -74,6 +74,7 @@ public class fishing : MonoBehaviour
 
         if(isFishing == true)
         {
+            player.constraints = RigidbodyConstraints2D.FreezeAll;
             if(throwBobber == true)
             {
                 Instantiate(bobber, fishingPoint.position, fishingPoint.rotation, transform);
@@ -84,6 +85,8 @@ public class fishing : MonoBehaviour
                 extraBobberDistance = 0.0f;
             }
             playerAnim.Play("Fishing");
+        } else {
+            player.constraints = RigidbodyConstraints2D.None;
         }
 
         if(Input.GetKeyDown(KeyCode.P) && timeTillCatch <= 3)

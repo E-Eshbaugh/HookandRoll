@@ -160,6 +160,7 @@ public class fishingGame : MonoBehaviour
         //     p7.SetActive(true);
         //     p8.SetActive(true);
         // }
+
         Vector2 rbCoords = rb.position;
         Vector2 playerPosition = player.position; // Reference to the player's position
         Camera cam = Camera.main;
@@ -174,27 +175,18 @@ public class fishingGame : MonoBehaviour
         // Apply stronger upward force when below the limit
         if (rbCoords.y < playerPosition.y - travelDist)
         {
-            atTop = true;
-            // Apply a stronger force when far below the limit
-            float distanceFactor = Mathf.Abs(rbCoords.y - (playerPosition.y - travelDist)) + 1;
-            Vector2 upForce = Vector2.up * distanceFactor * 2f;
-            rb.AddForce(upForce); // Push upward with increased force
-            
-            // Immediately set a minimum upward velocity to ensure it moves up
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, Mathf.Max(rb.linearVelocity.y, 1.0f));
+            atTop = false; 
         }
         // Check upper limit only if not currently recovering from being below
         else if (rbCoords.y > playerPosition.y + travelDist)
         {
-            atTop = false;
-            rb.AddForce(Vector2.down); // Push downward when above bounds
-            // Stop from moving up any more
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, Mathf.Min(rb.linearVelocity.y, 0));
+            atTop = true;
+            rb.AddForce(Vector2.down*(5.0f));
         }
 
         if (Input.GetKey(KeyCode.Space))
         {
-            rb.AddForce(Vector2.up*(2.0f));
+            rb.AddForce(Vector2.up*(5.0f));
             spaceBar = true;
         } else {
             spaceBar = false;
