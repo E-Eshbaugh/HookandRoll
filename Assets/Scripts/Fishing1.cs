@@ -86,7 +86,7 @@ public class fishing : MonoBehaviour
             }
             playerAnim.Play("Fishing");
         } else {
-            player.constraints = RigidbodyConstraints2D.None;
+            player.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
 
         if(Input.GetKeyDown(KeyCode.P) && timeTillCatch <= 3)
