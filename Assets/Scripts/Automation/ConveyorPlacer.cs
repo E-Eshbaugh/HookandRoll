@@ -22,7 +22,7 @@ public class ConveyorPlacer : MonoBehaviour
     private void Update()
     {
         // Toggle placement mode with Space
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.T))
         {
             isPlacing = !isPlacing;
             if (ghostConveyor != null)
