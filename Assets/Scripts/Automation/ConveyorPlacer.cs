@@ -104,15 +104,28 @@ public class ConveyorPlacer : MonoBehaviour
     // Place a conveyor at the specified position
     private void PlaceConveyor(Vector3 position)
     {
-        // Check if a conveyor already exists at this position
-        Collider2D[] colliders = Physics2D.OverlapBoxAll(position, placementGrid.cellSize * 0.8f, 0);
+        // Check if a conveyor already exists at this position using a smaller collision check
+        Vector2 checkSize = new Vector2(0.1f, 0.1f); // Much smaller check size
+        Collider2D[] colliders = Physics2D.OverlapBoxAll(position, checkSize, 0);
+        bool hasConveyor = false;
+        
         foreach (Collider2D collider in colliders)
         {
             if (collider.GetComponent<Conveyor>() != null)
             {
-                Debug.Log("Conveyor already exists at this position");
-                return;
+                // Skip the ghost conveyor
+                if (collider.gameObject.name == "GhostConveyor")
+                    continue;
+                    
+                hasConveyor = true;
+                Debug.Log($"Conveyor found at position {position}. Collider: {collider.gameObject.name}");
+                break;
             }
+        }
+        
+        if (hasConveyor)
+        {
+            return;
         }
         
         // Create the conveyor
