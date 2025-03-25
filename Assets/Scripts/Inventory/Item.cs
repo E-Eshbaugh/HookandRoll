@@ -7,9 +7,14 @@ using UnityEngine.EventSystems;
 
 public class Item : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    [Header("UI")]
     // public Image image;
     // public Canvas canvas;
+
+    public enum ItemType
+    {
+        None,
+        Generic
+    }
 
     [HideInInspector] public Transform parentAfterDrag;
     // drag and drop
@@ -34,5 +39,25 @@ public class Item : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
         // image.raycastTarget = true;
         Debug.Log("Stopped Dragging");
         transform.SetParent(parentAfterDrag);
+    }
+
+    public ItemType type = ItemType.Generic;
+    private SpriteRenderer spriteRenderer;
+
+    private void Awake()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer == null)
+        {
+            spriteRenderer = gameObject.AddComponent<SpriteRenderer>();
+            spriteRenderer.sprite = Resources.Load<Sprite>("Box"); // You'll need a box sprite in Resources folder
+            spriteRenderer.sortingOrder = 1;
+        }
+    }
+
+    // Set the item's position on the conveyor
+    public void SetPosition(Vector3 position)
+    {
+        transform.position = position;
     }
 }
