@@ -18109,10 +18109,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1976416895}
-  - component: {fileID: 1976416897}
   - component: {fileID: 1976416896}
+  - component: {fileID: 1976416897}
   m_Layer: 0
-  m_Name: fish
+  m_Name: indicator
   m_TagString: fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18127,8 +18127,8 @@ Transform:
   m_GameObject: {fileID: 1976416894}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.119, y: 0.404, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.1224, y: 0.411, z: 0}
+  m_LocalScale: {x: -0.17448333, y: 0.063, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1863789205}
@@ -18152,13 +18152,13 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.16, y: 0.12, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.0118022, y: 0.12, z: 0.2}
+  m_Center: {x: -0.0053241244, y: 0, z: 0}
 --- !u!212 &1976416897
 SpriteRenderer:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 6480785065957710470, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
-  m_PrefabInstance: {fileID: 3189891295874378387}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1976416894}
   m_Enabled: 1
@@ -18198,12 +18198,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -1965965269714156462, guid: f5b529a9af1b642e7aceb4686f545cb4, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: -7193339721715043874, guid: 0ef4668244f26fa429ebb9e4c9760121, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.13, y: 0.14}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -23822,6 +23822,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 252055473939835634, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
+      propertyPath: m_Size.x
+      value: 1.0118022
+      objectReference: {fileID: 0}
+    - target: {fileID: 252055473939835634, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
+      propertyPath: m_Center.x
+      value: -0.0053241244
+      objectReference: {fileID: 0}
     - target: {fileID: 3856388187102232577, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -23892,7 +23900,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6480785065957710470, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6573694043666574689, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
       propertyPath: m_LocalScale.x
@@ -23946,6 +23954,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6955182536266228097, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -0.17448333
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955182536266228097, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.063
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955182536266228097, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.1224
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955182536266228097, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.411
+      objectReference: {fileID: 0}
     - target: {fileID: 7221544773631154682, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
       propertyPath: m_Name
       value: Player
@@ -23960,6 +23984,7 @@ PrefabInstance:
       objectReference: {fileID: 3189891295874378396}
     m_RemovedComponents:
     - {fileID: 5851986545814095389, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
