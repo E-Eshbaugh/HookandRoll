@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1612194121782589479}
   - component: {fileID: 9134167496741706013}
   - component: {fileID: 7625144933988706871}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ConveyorPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
