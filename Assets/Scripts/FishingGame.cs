@@ -20,146 +20,156 @@ public class fishingGame : MonoBehaviour
     public GameObject p7;
     public GameObject p8;
 
-    public bool onFish;
+    public bool onFish = false;
     public fishing playerS;
     public GameObject bobber;
 
     public Transform player;
+    public float timeChangeRate = 0.25f;
+    [SerializeField] private Collider2D indicatorCollider;
+    private Collider2D barCollider;
 
 
     void Start()
     {
+        barCollider = GetComponent<Collider2D>();
+    }
 
+    void CheckCollision()
+    {
+        onFish = barCollider.bounds.Intersects(indicatorCollider.bounds);
     }
 
     // Update is called once per frame
     void Update()
     {
+        CheckCollision();
+
         if(onFish == true)
         {
-            targetTime += Time.deltaTime;
+            targetTime += timeChangeRate * Time.deltaTime;;
         }
         if (onFish == false)
         {
-            targetTime -= Time.deltaTime;
+            targetTime -= timeChangeRate * Time.deltaTime;;
         }
 
-        // if(targetTime <= 0.0f)
-        // {
-        //     transform.localPosition = new Vector3(-0.129f, -0.919f, 0);
-        //     onFish = false;
-        //     playerS.fishGameLost();
-        //     Destroy(GameObject.Find("bobber(Clone)"));
-        //     targetTime = 4.0f;
-        // }
-        // if (targetTime >= 8.0f)
-        // {
-        //     transform.localPosition = new Vector3(-0.129f, -0.919f, 0);
-        //     onFish = false;
-        //     playerS.fishGameWon();
-        //     Destroy(GameObject.Find("bobber(Clone)"));
-        //     targetTime = 4.0f;
-        // }
+         if(targetTime <= 0.0f)
+         {
+             transform.localPosition = new Vector3(-0.129f, -0.919f, 0);
+             onFish = false;
+             playerS.fishGameLost();
+             Destroy(GameObject.Find("bobber(Clone)"));
+             targetTime = 4.0f;
+         }
+         if (targetTime >= 8.0f)
+         {
+             transform.localPosition = new Vector3(-0.129f, -0.919f, 0);
+             onFish = false;
+             playerS.fishGameWon();
+             Destroy(GameObject.Find("bobber(Clone)"));
+             targetTime = 4.0f;
+         }
 
-        // if(targetTime >= 0.0f)
-        // {
-        //     p1.SetActive(false);
-        //     p2.SetActive(false);
-        //     p3.SetActive(false);
-        //     p4.SetActive(false);
-        //     p5.SetActive(false);
-        //     p6.SetActive(false);
-        //     p7.SetActive(false);
-        //     p8.SetActive(false);
-        // }
-        // if (targetTime >= 1.0f)
-        // {
-        //     p1.SetActive(true);
-        //     p2.SetActive(false);
-        //     p3.SetActive(false);
-        //     p4.SetActive(false);
-        //     p5.SetActive(false);
-        //     p6.SetActive(false);
-        //     p7.SetActive(false);
-        //     p8.SetActive(false);
-        // }
-        // if (targetTime >= 2.0f)
-        // {
-        //     p1.SetActive(true);
-        //     p2.SetActive(true);
-        //     p3.SetActive(false);
-        //     p4.SetActive(false);
-        //     p5.SetActive(false);
-        //     p6.SetActive(false);
-        //     p7.SetActive(false);
-        //     p8.SetActive(false);
-        // }
-        // if (targetTime >= 3.0f)
-        // {
-        //     p1.SetActive(true);
-        //     p2.SetActive(true);
-        //     p3.SetActive(true);
-        //     p4.SetActive(false);
-        //     p5.SetActive(false);
-        //     p6.SetActive(false);
-        //     p7.SetActive(false);
-        //     p8.SetActive(false);
-        // }
-        // if (targetTime >= 4.0f)
-        // {
-        //     p1.SetActive(true);
-        //     p2.SetActive(true);
-        //     p3.SetActive(true);
-        //     p4.SetActive(true);
-        //     p5.SetActive(false);
-        //     p6.SetActive(false);
-        //     p7.SetActive(false);
-        //     p8.SetActive(false);
-        // }
-        // if (targetTime >= 5.0f)
-        // {
-        //     p1.SetActive(true);
-        //     p2.SetActive(true);
-        //     p3.SetActive(true);
-        //     p4.SetActive(true);
-        //     p5.SetActive(true);
-        //     p6.SetActive(false);
-        //     p7.SetActive(false);
-        //     p8.SetActive(false);
-        // }
-        // if (targetTime >= 6.0f)
-        // {
-        //     p1.SetActive(true);
-        //     p2.SetActive(true);
-        //     p3.SetActive(true);
-        //     p4.SetActive(true);
-        //     p5.SetActive(true);
-        //     p6.SetActive(true);
-        //     p7.SetActive(false);
-        //     p8.SetActive(false);
-        // }
-        // if (targetTime >= 7.0f)
-        // {
-        //     p1.SetActive(true);
-        //     p2.SetActive(true);
-        //     p3.SetActive(true);
-        //     p4.SetActive(true);
-        //     p5.SetActive(true);
-        //     p6.SetActive(true);
-        //     p7.SetActive(true);
-        //     p8.SetActive(false);
-        // }
-        // if (targetTime >= 8.0f)
-        // {
-        //     p1.SetActive(true);
-        //     p2.SetActive(true);
-        //     p3.SetActive(true);
-        //     p4.SetActive(true);
-        //     p5.SetActive(true);
-        //     p6.SetActive(true);
-        //     p7.SetActive(true);
-        //     p8.SetActive(true);
-        // }
+         if(targetTime >= 0.0f)
+         {
+             p1.SetActive(false);
+             p2.SetActive(false);
+             p3.SetActive(false);
+             p4.SetActive(false);
+             p5.SetActive(false);
+             p6.SetActive(false);
+             p7.SetActive(false);
+             p8.SetActive(false);
+         }
+         if (targetTime >= 1.0f)
+         {
+             p1.SetActive(true);
+             p2.SetActive(false);
+             p3.SetActive(false);
+             p4.SetActive(false);
+             p5.SetActive(false);
+             p6.SetActive(false);
+             p7.SetActive(false);
+             p8.SetActive(false);
+         }
+         if (targetTime >= 2.0f)
+         {
+             p1.SetActive(true);
+             p2.SetActive(true);
+             p3.SetActive(false);
+             p4.SetActive(false);
+             p5.SetActive(false);
+             p6.SetActive(false);
+             p7.SetActive(false);
+             p8.SetActive(false);
+         }
+         if (targetTime >= 3.0f)
+         {
+             p1.SetActive(true);
+             p2.SetActive(true);
+             p3.SetActive(true);
+             p4.SetActive(false);
+             p5.SetActive(false);
+             p6.SetActive(false);
+             p7.SetActive(false);
+             p8.SetActive(false);
+         }
+         if (targetTime >= 4.0f)
+         {
+             p1.SetActive(true);
+             p2.SetActive(true);
+             p3.SetActive(true);
+             p4.SetActive(true);
+             p5.SetActive(false);
+             p6.SetActive(false);
+             p7.SetActive(false);
+             p8.SetActive(false);
+         }
+         if (targetTime >= 5.0f)
+         {
+             p1.SetActive(true);
+             p2.SetActive(true);
+             p3.SetActive(true);
+             p4.SetActive(true);
+             p5.SetActive(true);
+             p6.SetActive(false);
+             p7.SetActive(false);
+             p8.SetActive(false);
+         }
+         if (targetTime >= 6.0f)
+         {
+             p1.SetActive(true);
+             p2.SetActive(true);
+             p3.SetActive(true);
+             p4.SetActive(true);
+             p5.SetActive(true);
+             p6.SetActive(true);
+             p7.SetActive(false);
+             p8.SetActive(false);
+         }
+         if (targetTime >= 7.0f)
+         {
+             p1.SetActive(true);
+             p2.SetActive(true);
+             p3.SetActive(true);
+             p4.SetActive(true);
+             p5.SetActive(true);
+             p6.SetActive(true);
+             p7.SetActive(true);
+             p8.SetActive(false);
+         }
+         if (targetTime >= 8.0f)
+         {
+             p1.SetActive(true);
+             p2.SetActive(true);
+             p3.SetActive(true);
+             p4.SetActive(true);
+             p5.SetActive(true);
+             p6.SetActive(true);
+             p7.SetActive(true);
+             p8.SetActive(true);
+         }
 
         Vector2 rbCoords = rb.position;
         Vector2 playerPosition = player.position; // Reference to the player's position
@@ -195,21 +205,7 @@ public class fishingGame : MonoBehaviour
             // Reset game state
             onFish = false;
             targetTime = savedTargetTime;
-            gameObject.SetActive(false);
         }
-    }
-    public void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("fish"))
-        {
-            onFish = true;
-        }
-    }
-    public void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.CompareTag("fish"))
-        {
-            onFish = false;
-        }
-    }   
+    }  
+    
 }

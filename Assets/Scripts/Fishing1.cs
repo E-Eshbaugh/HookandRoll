@@ -117,6 +117,7 @@ public class fishing : MonoBehaviour
         throwBobber = false;
         isFishing = false;
         timeTillCatch = 0;
+        bobber.GetComponent<bobberScript>().gameOver();
     }
 
 
