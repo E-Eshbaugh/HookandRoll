@@ -188,12 +188,12 @@ public class fishingGame : MonoBehaviour
         else if (rbCoords.y > playerPosition.y + travelDist)
         {
             atTop = true;
-            rb.AddForce(Vector2.down*(5.0f));
+            rb.AddForce(Vector2.down*(2.0f));
         }
 
         if (Input.GetKey(KeyCode.Space))
         {
-            rb.AddForce(Vector2.up*(5.0f));
+            rb.AddForce(Vector2.up*(2.0f));
             spaceBar = true;
         } else {
             spaceBar = false;
