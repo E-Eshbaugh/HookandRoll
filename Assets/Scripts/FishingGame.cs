@@ -172,7 +172,7 @@ public class fishingGame : MonoBehaviour
          }
 
         Vector2 rbCoords = rb.position;
-        Vector2 playerPosition = player.position; // Reference to the player's position
+        Vector2 playerPosition = player.position;
         Camera cam = Camera.main;
         Vector2 screenTop = cam.ScreenToWorldPoint(new Vector2(0, Screen.height));
         Vector2 screenCenter = cam.ScreenToWorldPoint(new Vector2(0, Screen.height/2));

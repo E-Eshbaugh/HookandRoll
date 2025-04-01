@@ -2,19 +2,22 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Rendering;
+using Unity.VisualScripting;
 
 public class fishing : MonoBehaviour
 {
     // Start is called before the first frame update
     public Animator playerAnim;
+    private GameObject spawnBobber;
     public bool isFishing;
     public bool poleBack;
     public bool throwBobber;
     public Transform fishingPoint;
     public GameObject bobber;
+    public GameObject target;
     public Rigidbody2D player;
 
-    public Transform fishingTarget;
+    public GameObject fishingTarget;
 
     public float targetTime = 0.0f;
     public float savedTargetTime;
@@ -27,11 +30,17 @@ public class fishing : MonoBehaviour
     public float scaleSpeed = 0.5f;
     public float fishingRange = 20.0f;
     private float targetScalingDirection = 1;
+    private bool clickTime = false;
+    private bool canRange = true;
+    private Vector3 mousePos;
+    private bool freeze = false;
+    
 
     void Start()
     {
         isFishing = false;
         fishGame.SetActive(false);
+        target.SetActive(false);
         throwBobber = false;
         targetTime = 0.0f;
         savedTargetTime = 0.0f;
@@ -41,8 +50,17 @@ public class fishing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.Space) && isFishing == false && winnerAnim == false)
+        if (freeze) {
+            player.constraints = RigidbodyConstraints2D.FreezeAll;
+        } else {
+            player.constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
+
+        if(Input.GetKey(KeyCode.Space) && isFishing == false && winnerAnim == false && canRange == true)
         {
+            freeze = true;
+            fishingTarget.SetActive(true);
+            player.constraints = RigidbodyConstraints2D.FreezeAll;
             poleBack = true;
             fishingTarget.transform.localScale += Vector3.one * scaleSpeed * Time.deltaTime * targetScalingDirection;
             if (fishingTarget.transform.localScale.x >= fishingRange)
@@ -54,6 +72,7 @@ public class fishing : MonoBehaviour
                 targetScalingDirection = 1;
             }
         }
+
         if(isFishing == true)
         {
             timeTillCatch += Time.deltaTime;
@@ -63,22 +82,42 @@ public class fishing : MonoBehaviour
             }
         }
 
+
         if(Input.GetKeyUp(KeyCode.Space) && isFishing == false && winnerAnim == false)
         {
+            target.SetActive(true);
+            clickTime = true;
             poleBack = false;
-            isFishing = true;
-            throwBobber = true;
-            if (targetTime >= 3)
-            {
-                extraBobberDistance += 3;
-            }else
-            {
-                extraBobberDistance += targetTime;
-            }
+            canRange = false;
         }
 
-        Vector3 temp = new Vector3(extraBobberDistance, 0, 0);
-        fishingPoint.transform.position += temp;
+        if (Input.GetMouseButtonDown(0) && target.activeSelf && isFishing == false && clickTime == true)
+        {
+
+            mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mousePos.z = 10;
+            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
+
+            if (hit.collider != null && hit.collider.gameObject == fishingTarget)
+            {
+                spawnBobber = Instantiate(bobber, mousePos, Quaternion.identity);
+                isFishing = true;
+                target.SetActive(false);
+                playerAnim.Play("Fishing");
+                fishGame.SetActive(true);
+                canRange = true;
+            }
+            else
+            {
+                target.SetActive(false);
+                isFishing = false;
+                canRange = true;
+                fishGameLost();
+            }
+            clickTime = false;
+        }
+
+        fishingPoint.transform.position = mousePos;
 
         if(poleBack == true)
         {
@@ -89,19 +128,7 @@ public class fishing : MonoBehaviour
 
         if(isFishing == true)
         {
-            player.constraints = RigidbodyConstraints2D.FreezeAll;
-            if(throwBobber == true)
-            {
-                Instantiate(bobber, fishingPoint.position, fishingPoint.rotation, transform);
-                fishingPoint.transform.position -= temp;
-                throwBobber = false;
-                targetTime = 0.0f;
-                savedTargetTime = 0.0f;
-                extraBobberDistance = 0.0f;
-            }
             playerAnim.Play("Fishing");
-        } else {
-            player.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
 
         if(Input.GetKeyDown(KeyCode.P) && timeTillCatch <= 3)
@@ -117,22 +144,26 @@ public class fishing : MonoBehaviour
 
     public void fishGameWon()
     {
+        Destroy(spawnBobber);
         playerAnim.Play("WonFish");
         fishGame.SetActive(false);
         poleBack = false;
         isFishing = false;
         throwBobber = false;
         timeTillCatch = 0;
+        fishingTarget.SetActive(false);
     }
     public void fishGameLost()
     {
+        Destroy(spawnBobber);
         playerAnim.Play("Idle");
         fishGame.SetActive(false);
         poleBack = false;
         throwBobber = false;
         isFishing = false;
         timeTillCatch = 0;
-        bobber.GetComponent<bobberScript>().gameOver();
+        fishingTarget.SetActive(false);
+        freeze = false;
     }
 
 
