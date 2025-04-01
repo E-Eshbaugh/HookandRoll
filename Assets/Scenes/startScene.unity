@@ -54117,7 +54117,7 @@ MonoBehaviour:
   poleBack: 0
   throwBobber: 0
   fishingPoint: {fileID: 1132247599}
-  bobber: {fileID: 8246347531559867352, guid: 696165f15a2cfd04b8d235cc238012b2, type: 3}
+  bobber: {fileID: 4876971587366606744, guid: 696165f15a2cfd04b8d235cc238012b2, type: 3}
   target: {fileID: 0}
   player: {fileID: 3189891295874378401}
   fishingTarget: {fileID: 790871598}
