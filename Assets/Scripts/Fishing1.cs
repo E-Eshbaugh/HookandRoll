@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Rendering;
 
 public class fishing : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class fishing : MonoBehaviour
     public GameObject bobber;
     public Rigidbody2D player;
 
+    public Transform fishingTarget;
+
     public float targetTime = 0.0f;
     public float savedTargetTime;
     public float extraBobberDistance;
@@ -21,6 +24,9 @@ public class fishing : MonoBehaviour
 
     public float timeTillCatch = 0.0f;
     public bool winnerAnim;
+    public float scaleSpeed = 0.5f;
+    public float fishingRange = 20.0f;
+    private float targetScalingDirection = 1;
 
     void Start()
     {
@@ -35,9 +41,18 @@ public class fishing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && isFishing == false && winnerAnim == false)
+        if(Input.GetKey(KeyCode.Space) && isFishing == false && winnerAnim == false)
         {
             poleBack = true;
+            fishingTarget.transform.localScale += Vector3.one * scaleSpeed * Time.deltaTime * targetScalingDirection;
+            if (fishingTarget.transform.localScale.x >= fishingRange)
+            {
+                targetScalingDirection = -1;
+            }
+            else if (fishingTarget.transform.localScale.x <= 0.3f)
+            {
+                targetScalingDirection = 1;
+            }
         }
         if(isFishing == true)
         {
@@ -105,8 +120,8 @@ public class fishing : MonoBehaviour
         playerAnim.Play("WonFish");
         fishGame.SetActive(false);
         poleBack = false;
-        throwBobber = false;
         isFishing = false;
+        throwBobber = false;
         timeTillCatch = 0;
     }
     public void fishGameLost()
