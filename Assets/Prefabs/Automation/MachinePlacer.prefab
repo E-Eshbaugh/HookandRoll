@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8005741260603570647}
   - component: {fileID: 5763089641193242933}
   m_Layer: 0
-  m_Name: ConveyorPlacer
+  m_Name: MachinePlacer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,4 +45,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conveyorPrefab: {fileID: 6614591148058393039, guid: 7e3ea6fe36d634416b81be0dc19dd3c1, type: 3}
+  storagePrefab: {fileID: 6614591148058393039, guid: 6b9d3457b55cc4d1d8d2773c4b4bbcf2, type: 3}
   placementGrid: {fileID: 0}

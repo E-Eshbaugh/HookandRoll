@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public VectorValue startPosition;
     public string targetSceneName = "inside";
     public SpriteRenderer spriteRenderer;
+    public Vector2 externalVelocity = Vector2.zero; // Velocity applied by external forces like conveyors
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,7 +25,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.linearVelocity = moveInput * moveSpeed;
+        // Combine player input velocity with external velocity
+        rb.linearVelocity = (moveInput * moveSpeed) + externalVelocity;
 
         if (SceneManager.GetActiveScene().name == targetSceneName)
         {

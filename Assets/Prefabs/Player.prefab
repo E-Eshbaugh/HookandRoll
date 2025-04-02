@@ -15,11 +15,7 @@ GameObject:
   - component: {fileID: 4726919475553391703}
   - component: {fileID: 8487076687179068001}
   - component: {fileID: 6520311295596471655}
-<<<<<<< HEAD
-  - component: {fileID: 3575637065917123329}
-=======
   - component: {fileID: 4268112442825336007}
->>>>>>> 28b4ffa30d3f5c16a46091726a624517136f1800
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -238,6 +234,7 @@ MonoBehaviour:
   startPosition: {fileID: 11400000, guid: d2f94d56b6c695145acb8c34245a3101, type: 2}
   targetSceneName: inside
   spriteRenderer: {fileID: 0}
+  externalVelocity: {x: 0, y: 0}
 --- !u!95 &8487076687179068001
 Animator:
   serializedVersion: 7
@@ -306,11 +303,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.75, y: 0.34683368}
   m_EdgeRadius: 0
-<<<<<<< HEAD
---- !u!114 &3575637065917123329
-=======
 --- !u!114 &4268112442825336007
->>>>>>> 28b4ffa30d3f5c16a46091726a624517136f1800
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -319,12 +312,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 7221544773631154682}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 11500000, guid: 7d499c133536a3842b254ec3e629f3a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inv: {fileID: 0}
-=======
   m_Script: {fileID: 11500000, guid: 8213ac0dba055e546b126396302bc063, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -334,6 +321,7 @@ MonoBehaviour:
   throwBobber: 0
   fishingPoint: {fileID: 0}
   bobber: {fileID: 8246347531559867352, guid: 696165f15a2cfd04b8d235cc238012b2, type: 3}
+  player: {fileID: 5433580895830129377}
   targetTime: 4
   savedTargetTime: 0
   extraBobberDistance: 0
@@ -604,4 +592,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5609634306446915932, guid: 99ea3fb8eb9854bf19bec5959c962178, type: 3}
   m_PrefabInstance: {fileID: 5101996585461583932}
   m_PrefabAsset: {fileID: 0}
->>>>>>> 28b4ffa30d3f5c16a46091726a624517136f1800

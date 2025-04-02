@@ -3,6 +3,14 @@ using UnityEngine;
 
 public class Machine : MonoBehaviour
 {
+    // Direction for item movement
+    public enum Direction
+    {
+        Up,
+        Right,
+        Down,
+        Left
+    }
     // Input and output storages
     public List<Item> inputStorage = new List<Item>();
     public List<Item> outputStorage = new List<Item>();
@@ -175,5 +183,26 @@ public class Machine : MonoBehaviour
             
         if (!other.inputs.Contains(this))
             other.inputs.Add(this);
+    }
+
+    // Helper method to set the machine's rotation based on direction
+    public virtual void SetDirection(Direction newDirection)
+    {
+        // Update sprite rotation (assuming 0 is right, 90 is up, etc.)
+        switch (newDirection)
+        {
+            case Direction.Right:
+                transform.rotation = Quaternion.Euler(0, 0, 0);
+                break;
+            case Direction.Up:
+                transform.rotation = Quaternion.Euler(0, 0, 90);
+                break;
+            case Direction.Left:
+                transform.rotation = Quaternion.Euler(0, 0, 180);
+                break;
+            case Direction.Down:
+                transform.rotation = Quaternion.Euler(0, 0, 270);
+                break;
+        }
     }
 }
