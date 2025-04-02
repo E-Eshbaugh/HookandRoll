@@ -12,7 +12,7 @@ public class fishing : MonoBehaviour
     public bool isFishing;
     public bool poleBack;
     public bool throwBobber;
-    public Transform fishingPoint;
+    private Transform fishingPoint;
     public GameObject bobber;
     public GameObject target;
     public Rigidbody2D player;
@@ -60,7 +60,6 @@ public class fishing : MonoBehaviour
         {
             freeze = true;
             fishingTarget.SetActive(true);
-            player.constraints = RigidbodyConstraints2D.FreezeAll;
             poleBack = true;
             fishingTarget.transform.localScale += Vector3.one * scaleSpeed * Time.deltaTime * targetScalingDirection;
             if (fishingTarget.transform.localScale.x >= fishingRange)
@@ -117,7 +116,7 @@ public class fishing : MonoBehaviour
             clickTime = false;
         }
 
-        fishingPoint.transform.position = mousePos;
+        //fishingPoint.transform.position = mousePos;
 
         if(poleBack == true)
         {
