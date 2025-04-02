@@ -10,6 +10,8 @@ public class Item : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     // public Image image;
     // public Canvas canvas;
 
+    public int quantity;
+
     public enum ItemType
     {
         None,
