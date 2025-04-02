@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3603464536547488823}
   - component: {fileID: 3121467702498619972}
   - component: {fileID: 8907476172570165466}
-  - component: {fileID: 1042968082530749957}
+  - component: {fileID: 2972234931964962790}
   m_Layer: 9
-  m_Name: ConveyorBelt
+  m_Name: Storage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 6614591148058393039}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2434.7412}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -77,8 +77,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
-  m_Sprite: {fileID: -873054368603808996, guid: 3154106a00693468aa1cc0e9734ead80, type: 3}
+  m_SortingOrder: 11
+  m_Sprite: {fileID: 21300000, guid: 29c9cded5e558164aaf8c9bf08aa1510, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -119,15 +119,15 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1, y: 0.96875}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -135,7 +135,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1042968082530749957
+--- !u!114 &2972234931964962790
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6614591148058393039}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2eb89f9ba5d064af2830f9f8e2badfbd, type: 3}
+  m_Script: {fileID: 11500000, guid: 610e1b279321140b39719d7ba702702a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inputStorage: []
@@ -153,7 +153,9 @@ MonoBehaviour:
   outputs: []
   maxInputCapacity: 5
   maxOutputCapacity: 5
-  machineName: BaseMachine
+  machineName: Storage
   productionStrategy: 0
   direction: 1
-  itemMoveSpeed: 1
+  itemSpacing: 0.25
+  itemsPerRow: 4
+  startOffset: {x: -0.375, y: 0.375}
