@@ -52380,6 +52380,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3189891295874378396}
     - target: {fileID: 8596588197533097895, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
+      propertyPath: targetTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596588197533097895, guid: d45aa1d211af10c4e98380d12823aa87, type: 3}
       propertyPath: indicatorCollider
       value: 
       objectReference: {fileID: 1976416899}

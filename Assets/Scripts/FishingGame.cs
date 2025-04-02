@@ -179,23 +179,27 @@ public class fishingGame : MonoBehaviour
         float worldScreenHeight = screenTop.y - screenCenter.y;
         float travelDist = worldScreenHeight * 0.2f;
 
-        // Debug current positions
+        // Normalized forces
+        float baseForce = 70.0f;
+        float normalizedForce = baseForce * Time.fixedDeltaTime;
 
         if (rbCoords.y < playerPosition.y - travelDist)
         {
-            atTop = false; 
+            atTop = false;
         }
         else if (rbCoords.y > playerPosition.y + travelDist)
         {
             atTop = true;
-            rb.AddForce(Vector2.down*(2.0f));
+            rb.AddForce(Vector2.down * normalizedForce);
         }
 
         if (Input.GetKey(KeyCode.Space))
         {
-            rb.AddForce(Vector2.up*(2.0f));
+            rb.AddForce(Vector2.up * normalizedForce);
             spaceBar = true;
-        } else {
+        }
+        else
+        {
             spaceBar = false;
         }
 
