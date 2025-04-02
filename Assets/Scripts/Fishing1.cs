@@ -34,8 +34,6 @@ public class fishing : MonoBehaviour
     private bool canRange = true;
     private Vector3 mousePos;
     private bool freeze = false;
-    
-
     void Start()
     {
         isFishing = false;
@@ -151,7 +149,7 @@ public class fishing : MonoBehaviour
         throwBobber = false;
         timeTillCatch = 0;
         fishingTarget.SetActive(false);
-    }
+    } 
     public void fishGameLost()
     {
         Destroy(spawnBobber);

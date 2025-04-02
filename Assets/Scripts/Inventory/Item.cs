@@ -13,9 +13,9 @@ public class Item : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     public enum ItemType
     {
         None,
-        Generic
+        Generic, 
+        Fish
     }
-
     [HideInInspector] public Transform parentAfterDrag;
     // drag and drop
     public void OnBeginDrag(PointerEventData eventData) {
