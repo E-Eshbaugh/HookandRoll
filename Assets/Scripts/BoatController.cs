@@ -9,7 +9,9 @@ public class BoatController : MonoBehaviour
     public Boolean inBoat = false;
     public float sailAngle = 180f;
     public float windSpeed = 10f;
+    public float scaledWindSpeed;
     public float windDirection = 180f;
+    public float sailsUpScaler = 0.0f;
     public UnityEngine.Vector2 windForce;
     private Rigidbody2D rb;
     public int mass = 1;
@@ -21,6 +23,7 @@ public class BoatController : MonoBehaviour
             boatAnimator = GetComponent<Animator>();
 
         rb = GetComponent<Rigidbody2D>();
+        scaledWindSpeed = windSpeed;
     }
 
     void Update()
@@ -28,7 +31,23 @@ public class BoatController : MonoBehaviour
         // ================================= Movement Checks =================================
         if (inBoat)
         {
-            if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.RightArrow))
+            scaledWindSpeed = sailsUpScaler * windSpeed;
+
+            if (Input.GetKey(KeyCode.UpArrow) && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)))
+            {   
+                if (sailsUpScaler < 0.99f)
+                {
+                    sailsUpScaler += 0.01f;
+                }
+            }
+            else if (Input.GetKey(KeyCode.DownArrow) && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)))
+            {
+                if (sailsUpScaler >= 0.01f)
+                {
+                sailsUpScaler -= 0.01f;
+                }
+            }
+            else if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.RightArrow))
             {
                 boatAnimator.Play("BoatUpRight");
                 sailAngle = 45f;
@@ -80,7 +99,7 @@ public class BoatController : MonoBehaviour
             float angleDifference = (windDirection - sailAngle) * Mathf.Deg2Rad;
             float sinDiff = Mathf.Sin(angleDifference);
 
-            float forceMagnitude = windSpeed * windSpeed / mass * sinDiff;
+            float forceMagnitude = scaledWindSpeed * scaledWindSpeed / mass * sinDiff;
 
             float perpAngle = (sailAngle + 90f) * Mathf.Deg2Rad;
             UnityEngine.Vector2 forceDirection = new UnityEngine.Vector2(Mathf.Cos(perpAngle), Mathf.Sin(perpAngle));
