@@ -475,7 +475,7 @@ MonoBehaviour:
   target: {fileID: 0}
   player: {fileID: 5433580895830129377}
   fishingTarget: {fileID: 2485793937288696311}
-  targetTime: 3
+  targetTime: 4
   savedTargetTime: 0
   extraBobberDistance: 0
   fishGame: {fileID: 5932348448321520901}
