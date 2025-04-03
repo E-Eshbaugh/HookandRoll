@@ -1,17 +1,18 @@
 using UnityEngine;
 
-public class PlayerInfo : MonoBehaviour
+public class testing : MonoBehaviour
 {
-    public InventoryObj inv;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Debug.Log("help");
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Escape)){
+            Debug.Log("help");
+        }   
     }
 }
