@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -5,17 +6,21 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
+    public GameObject boat;
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private Animator animator;
     public VectorValue startPosition;
     public string targetSceneName = "inside";
     public SpriteRenderer spriteRenderer;
+    public bool playerInBoat = false;
     public Vector2 externalVelocity = Vector2.zero; // Velocity applied by external forces like conveyors
+    private Transform boatTransform;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        boatTransform = boat.GetComponent<Transform>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         transform.position = startPosition.initialValue;
@@ -25,7 +30,17 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Combine player input velocity with external velocity
+        if (boat.GetComponent<BoatController>().inBoat)
+        {
+            playerInBoat = true;
+            rb.linearVelocity = Vector2.zero;
+            animator.Play("Idle");
+        }
+        else
+        {
+            playerInBoat = false;
+        }
+
         rb.linearVelocity = (moveInput * moveSpeed) + externalVelocity;
 
         if (SceneManager.GetActiveScene().name == targetSceneName)

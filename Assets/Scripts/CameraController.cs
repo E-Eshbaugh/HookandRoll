@@ -1,3 +1,4 @@
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
@@ -6,6 +7,11 @@ public class CameraController : MonoBehaviour
     public float smoothTime = 0.3f;
     private Vector3 _velocity = Vector3.zero; 
     public Vector3 offset;
+    public CinemachineCamera vcam;
+    public Transform player;
+    public Transform boat;
+    public bool inBoat = false;
+
 
     void LateUpdate()
     {
@@ -19,16 +25,8 @@ public class CameraController : MonoBehaviour
         }
     }
 
-    // camera without smoothing
-    // void LateUpdate()
-    // {
-    //     if (target != null)
-    //     {
-    //         // Update camera position to follow target
-    //         Vector3 newPosition = new Vector3(target.position.x + offset.x, 
-    //                                           target.position.y + offset.y, 
-    //                                           transform.position.z + offset.z);
-    //         transform.position = newPosition;
-    //     }
-    // }
+    void Update()
+    {
+        vcam.Follow = inBoat ? boat : player;
+    }
 }
