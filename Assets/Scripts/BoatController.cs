@@ -12,6 +12,7 @@ public class BoatController : MonoBehaviour
     public float scaledWindSpeed;
     public float windDirection = 180f;
     public float sailsUpScaler = 0.0f;
+    public float topSpeed = 10f;
     public UnityEngine.Vector2 windForce;
     private Rigidbody2D rb;
     public int mass = 1;

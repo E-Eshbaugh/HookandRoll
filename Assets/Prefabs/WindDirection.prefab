@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5683854371092922119}
   - component: {fileID: 1305415565609300602}
   - component: {fileID: 2779890280664696809}
+  - component: {fileID: 8575670170097810922}
   m_Layer: 5
   m_Name: WindDirection
   m_TagString: Untagged
@@ -75,3 +76,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8575670170097810922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8734857433905607424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b4f729326a975a4baba562f1854817f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windArrow: {fileID: 0}
+  windSpeedSprites: []
+  maxWindSpeed: 20
+  windDirection: {x: 0, y: 0}
+  windSpeed: 0
