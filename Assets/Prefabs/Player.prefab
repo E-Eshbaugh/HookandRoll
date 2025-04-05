@@ -383,9 +383,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 4
+  boat: {fileID: 0}
   startPosition: {fileID: 11400000, guid: c1ddc68e3a2eb7242ab3549d7aa092a4, type: 2}
   targetSceneName: inside
   spriteRenderer: {fileID: 0}
+  playerInBoat: 0
   externalVelocity: {x: 0, y: 0}
 --- !u!95 &8487076687179068001
 Animator:
