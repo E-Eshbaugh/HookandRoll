@@ -63,7 +63,7 @@ public class WorldInteractionManager : MonoBehaviour
             // Check if clicking on UI element first - ignore world clicks if UI is hit
             if (UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
             {
-                 Debug.Log("Clicked on UI element, ignoring world click."); // DEBUG
+                Debug.Log("Clicked on UI element, ignoring world click."); // DEBUG
                 return; // Click was on UI, don't interact with world
             }
 

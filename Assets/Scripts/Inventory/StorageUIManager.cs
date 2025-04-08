@@ -7,10 +7,10 @@ public class StorageUIManager : MonoBehaviour
 {
     [Header("UI References")]
     [Tooltip("The parent Transform for the inventory slots.")]
-    public Transform storagePanel; // Assign the Panel's RectTransform here in Inspector
+    public Transform storagePanel;
 
     [Tooltip("The prefab for a single inventory slot UI element.")]
-    public GameObject inventorySlotPrefab; // Assign your slot prefab here in Inspector
+    public GameObject inventorySlotPrefab;
 
     private Storage currentOpenStorage; // The storage currently being viewed
     private List<GameObject> currentUISlots = new List<GameObject>();

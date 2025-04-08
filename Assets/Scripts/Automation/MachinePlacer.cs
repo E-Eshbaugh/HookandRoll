@@ -214,6 +214,12 @@ public class MachinePlacer : MonoBehaviour
         
         // Create the machine
         GameObject newMachine = Instantiate(placingMachine, finalPosition, Quaternion.identity);
+
+        // Set parent to MachineManager if it exists
+        if (MachineManager.Instance != null)
+        {
+            newMachine.transform.SetParent(MachineManager.Instance.transform);
+        }
         // newMachine.name = "Machine";
         
         // Set its direction
