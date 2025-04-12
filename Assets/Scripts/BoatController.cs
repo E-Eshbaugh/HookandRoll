@@ -101,13 +101,23 @@ public class BoatController : MonoBehaviour
             float sinDiff = Mathf.Sin(angleDifference);
 
             float forceMagnitude = scaledWindSpeed * scaledWindSpeed / mass * sinDiff;
+            float waterResistanceMagnitude = -1f;
 
             float perpAngle = (sailAngle + 90f) * Mathf.Deg2Rad;
-            UnityEngine.Vector2 forceDirection = new UnityEngine.Vector2(Mathf.Cos(perpAngle), Mathf.Sin(perpAngle));
-            windForce = forceMagnitude * forceDirection;
-            rb.AddForce(windForce);
 
-            Debug.DrawLine(transform.position, transform.position + (UnityEngine.Vector3)windForce, Color.red);
+            UnityEngine.Vector2 forceDirection = new UnityEngine.Vector2(Mathf.Cos(perpAngle), Mathf.Sin(perpAngle));
+            UnityEngine.Vector2 waterResistanceDirection = new UnityEngine.Vector2(-Mathf.Cos(perpAngle), -Mathf.Sin(perpAngle));
+
+            UnityEngine.Vector2 waterResistance = waterResistanceMagnitude * waterResistanceDirection;
+
+            // if windforce magnitude < 0 -> set it to 0
+            if (windForce.magnitude < 0) {
+                windForce *= 0;
+            } else {
+                windForce = (forceMagnitude * forceDirection) - waterResistance;
+            }
+
+            rb.AddForce(windForce);
         }
     }
 

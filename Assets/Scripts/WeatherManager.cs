@@ -47,8 +47,8 @@ public class WeatherManager : MonoBehaviour
         }
 
         //to do -- implement random generating direction/speed
-        boat.GetComponent<BoatController>().windDirection = 180;
-        boat.GetComponent<BoatController>().windSpeed = 2;
+        //boat.GetComponent<BoatController>().windDirection = 180;
+        //boat.GetComponent<BoatController>().windSpeed = 2;
 
         //todo -- turn rain on and off
 
