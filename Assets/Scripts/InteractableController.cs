@@ -11,7 +11,10 @@ public class InteractableController : MonoBehaviour
     public bool playerInRange = false;
     public bool interact = false;
     public string sceneToLoad;
-    
+    public Transform inventory;
+    public Item itemToGive;
+    private bool givenItem;
+
     void Start()
     {
         if (interactionText != null)
@@ -32,6 +35,15 @@ public class InteractableController : MonoBehaviour
             timer += Time.deltaTime;
             float fillAmount = Mathf.Clamp01(timer / timeToFill);
             progressBar.localScale = new Vector3(fillAmount, 0.25f, 1);
+            if (timer >= timeToFill && !givenItem) {
+                if (itemToGive != null) {
+                    giveItem(itemToGive);
+                } else {
+                    Debug.Log("No item to give");
+                    givenItem = true;
+                }
+               
+            }
         }
         
     }
@@ -44,6 +56,7 @@ public class InteractableController : MonoBehaviour
             interactionText.SetActive(true);
             isActive = true;
             timer = 0f;
+            givenItem = false;
         }
     }
 
@@ -63,5 +76,21 @@ public class InteractableController : MonoBehaviour
     {
        interact = true;
        //SceneManager.LoadScene(sceneToLoad);
+    }
+
+    private void giveItem(Item item) {
+        foreach (Transform slot in inventory) {
+            if (slot.childCount == 0 && !givenItem) {
+                Item newItem = Instantiate(item, slot);
+                newItem.transform.localPosition = Vector2.zero;
+
+                Item itemScript = newItem.GetComponent<Item>();
+                if (itemScript != null) {
+                    itemScript.parentAfterDrag = slot;
+                }
+                givenItem = true;
+            }
+        }
+        Debug.LogWarning("No empty toolbar slots!");
     }
 }
