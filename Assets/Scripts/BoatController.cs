@@ -117,9 +117,11 @@ public class BoatController : MonoBehaviour
         if (inBoat)
         {
             applyForces();
+            LockPlayerToBoat();
         }
     }
 
+    // PHYSICS ?!?!?!?!?!!?!?! 
     void applyForces() {
         float sailAngleRad = sailAngle * Mathf.Deg2Rad;
 
