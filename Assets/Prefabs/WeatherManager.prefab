@@ -44,11 +44,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286402e10775f8d439b3946a87dfcc93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minTime: 1
-  maxTime: 3
+  minTime: 10
+  maxTime: 15
   autoRestart: 1
+  minWindSpeed: 0
+  maxWindSpeed: 2
+  maxWindDirectionChange: 360
+  windArrow: {fileID: 0}
+  windSpeedSprites:
+  - {fileID: 1627976348690088955, guid: 06bb266d482409b4aa297c22c4c9d7dc, type: 3}
+  - {fileID: -5705091347790136805, guid: 51490519487047348868458ac9707b90, type: 3}
+  - {fileID: -463691223791594384, guid: 607c57b10ab8ce0449b5bd31a4567b9f, type: 3}
+  - {fileID: -2046303122537127579, guid: 36100cca4befbe84eafbaa97342d8339, type: 3}
+  rainChangeProbability: 0.3
+  rainFadeDuration: 5
+  rainEffect: {fileID: 0}
+  boat: {fileID: 0}
   OnTimerCompleted:
     m_PersistentCalls:
       m_Calls: []
-  boat: {fileID: 0}
-  rainEffect: {fileID: 0}
+  speed: 0
+  direction: {x: 0, y: 0}
