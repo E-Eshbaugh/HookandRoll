@@ -46,10 +46,10 @@ public class fishing : MonoBehaviour
         fishGame.SetActive(false);
         target.SetActive(false);
         throwBobber = false;
-        targetTime = 0.0f;
+        targetTime = 1.0f;
         savedTargetTime = 0.0f;
         extraBobberDistance = 0.0f;
-        inventoryManager = FindObjectOfType<InventoryManager>();
+        inventoryManager = FindFirstObjectByType<InventoryManager>();
     }
 
     // Update is called once per frame

@@ -13,13 +13,14 @@ public class BoatController : MonoBehaviour
     public Transform player;
     public UnityEngine.Vector3 playerOffset = new UnityEngine.Vector3(0, 0, 0);
     [Header("-- Sailing Physics -- ")]
-    public float sailAngle = 180f;
-    public float windSpeed = 10f;
+    public float sailAngle;
+    public float windSpeed;
     public float scaledWindSpeed;
-    public float windDirection = 180f;
+    public UnityEngine.Vector2 windDirection;
     public float sailsUpScaler = 0.0f;
-    public float topSpeed = 10f;
+    public float topSpeed = 5f;
     public float waterResistanceFactor = 0.1f;
+    public WeatherManager weatherManager;
     public UnityEngine.Vector2 windForce;
     private Rigidbody2D rb;
     public int mass = 1;
@@ -36,6 +37,9 @@ public class BoatController : MonoBehaviour
 
         playerMainRenderer = player.GetComponent<SpriteRenderer>();
         playerMovementScript = player.GetComponent<MonoBehaviour>();
+
+        windDirection = GetComponent<WeatherManager>().GetWindDirection();
+        windSpeed = GetComponent<WeatherManager>().GetWindSpeed();
     }
 
     void Update()
@@ -62,12 +66,12 @@ public class BoatController : MonoBehaviour
             else if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.RightArrow))
             {
                 boatAnimator.Play("BoatUpRight");
-                sailAngle = 225f;
+                sailAngle = 45f;
             }
             else if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.LeftArrow))
             {
                 boatAnimator.Play("BoatUpLeft");
-                sailAngle = 315f;
+                sailAngle = 135f;
             }
             else if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.RightArrow))
             {
@@ -88,12 +92,12 @@ public class BoatController : MonoBehaviour
             else if (Input.GetKey(KeyCode.RightArrow))
             {
                 boatAnimator.Play("BoatRight");
-                sailAngle = 180f;
+                sailAngle = 0f;
             }
             else if (Input.GetKey(KeyCode.UpArrow))
             {
                 boatAnimator.Play("BoatUp");
-                sailAngle = 270f;
+                sailAngle = 90f;
             }
             else if (Input.GetKey(KeyCode.DownArrow))
             {
@@ -108,28 +112,38 @@ public class BoatController : MonoBehaviour
     // Sailboat physics 
     void FixedUpdate()
     {
+        windDirection = weatherManager.GetWindDirection();
+        windSpeed = weatherManager.GetWindSpeed();
         if (inBoat)
         {
-            LockPlayerToBoat();
-            float sailNormalAngle = (sailAngle + 90f) * Mathf.Deg2Rad;
-            UnityEngine.Vector2 sailNormal = new UnityEngine.Vector2(Mathf.Cos(sailNormalAngle), Mathf.Sin(sailNormalAngle));
+            applyForces();
+        }
+    }
 
-            float windAngleRad = windDirection * Mathf.Deg2Rad;
-            UnityEngine.Vector2 windVector = new UnityEngine.Vector2(Mathf.Cos(windAngleRad), Mathf.Sin(windAngleRad)) * windSpeed;
+    void applyForces() {
+        float sailAngleRad = sailAngle * Mathf.Deg2Rad;
 
-            float dotProduct = UnityEngine.Vector2.Dot(windVector.normalized, sailNormal);
-            float effectiveForce = Mathf.Max(dotProduct, 0) * windSpeed * sailsUpScaler;
+        // Compute normal.
+        float sailNormalAngle = sailAngleRad + Mathf.PI / 2f;
+        UnityEngine.Vector2 sailNormal = new UnityEngine.Vector2(Mathf.Cos(sailNormalAngle), Mathf.Sin(sailNormalAngle));
 
-            windForce = sailNormal * effectiveForce;
+        //Compute the wind radians
+        float windAngle = Mathf.Atan2(windDirection.y, windDirection.x);
 
-            UnityEngine.Vector2 waterResistance = -rb.linearVelocity * waterResistanceFactor;
+        // Force Magnitude
+        float effectiveForceMagnitude = windSpeed * Mathf.Sin(windAngle - sailAngleRad);
 
-            rb.AddForce(windForce + waterResistance);
+        // Scale force
+        UnityEngine.Vector2 windForceVector = sailNormal * effectiveForceMagnitude * sailsUpScaler;
+        UnityEngine.Vector2 waterResistance = -rb.linearVelocity * waterResistanceFactor;
 
-            if (rb.linearVelocity.magnitude > topSpeed)
-            {
-                rb.linearVelocity = rb.linearVelocity.normalized * topSpeed;
-            }
+        windForce = windForceVector + waterResistance;
+
+        //net force
+        rb.AddForce(windForce);
+
+        if (rb.linearVelocity.magnitude > topSpeed) {
+            rb.linearVelocity = rb.linearVelocity.normalized * topSpeed;
         }
     }
 
