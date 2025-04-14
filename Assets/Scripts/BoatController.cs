@@ -13,6 +13,7 @@ public class BoatController : MonoBehaviour
     public float windDirection = 180f;
     public float sailsUpScaler = 0.0f;
     public float topSpeed = 10f;
+    public float waterResistanceFactor = 0.1f;
     public UnityEngine.Vector2 windForce;
     private Rigidbody2D rb;
     public int mass = 1;
@@ -51,12 +52,12 @@ public class BoatController : MonoBehaviour
             else if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.RightArrow))
             {
                 boatAnimator.Play("BoatUpRight");
-                sailAngle = 45f;
+                sailAngle = 225f;
             }
             else if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.LeftArrow))
             {
                 boatAnimator.Play("BoatUpLeft");
-                sailAngle = 135f;
+                sailAngle = 315f;
             }
             else if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.RightArrow))
             {
@@ -94,32 +95,32 @@ public class BoatController : MonoBehaviour
         //=====================================================================================
     }
 
+    // Sailboat physics 
     void FixedUpdate()
+{
+    if (inBoat)
     {
-        if (inBoat) {
-            float angleDifference = (windDirection - sailAngle) * Mathf.Deg2Rad;
-            float sinDiff = Mathf.Sin(angleDifference);
+        float sailNormalAngle = (sailAngle + 90f) * Mathf.Deg2Rad;
+        UnityEngine.Vector2 sailNormal = new UnityEngine.Vector2(Mathf.Cos(sailNormalAngle), Mathf.Sin(sailNormalAngle));
 
-            float forceMagnitude = scaledWindSpeed * scaledWindSpeed / mass * sinDiff;
-            float waterResistanceMagnitude = -1f;
+        float windAngleRad = windDirection * Mathf.Deg2Rad;
+        UnityEngine.Vector2 windVector = new UnityEngine.Vector2(Mathf.Cos(windAngleRad), Mathf.Sin(windAngleRad)) * windSpeed;
 
-            float perpAngle = (sailAngle + 90f) * Mathf.Deg2Rad;
+        float dotProduct = UnityEngine.Vector2.Dot(windVector.normalized, sailNormal);
+        float effectiveForce = Mathf.Max(dotProduct, 0) * windSpeed * sailsUpScaler;
 
-            UnityEngine.Vector2 forceDirection = new UnityEngine.Vector2(Mathf.Cos(perpAngle), Mathf.Sin(perpAngle));
-            UnityEngine.Vector2 waterResistanceDirection = new UnityEngine.Vector2(-Mathf.Cos(perpAngle), -Mathf.Sin(perpAngle));
+        windForce = sailNormal * effectiveForce;
 
-            UnityEngine.Vector2 waterResistance = waterResistanceMagnitude * waterResistanceDirection;
+        UnityEngine.Vector2 waterResistance = -rb.linearVelocity * waterResistanceFactor;
 
-            // if windforce magnitude < 0 -> set it to 0
-            if (windForce.magnitude < 0) {
-                windForce *= 0;
-            } else {
-                windForce = (forceMagnitude * forceDirection) - waterResistance;
-            }
+        rb.AddForce(windForce + waterResistance);
 
-            rb.AddForce(windForce);
+        if (rb.linearVelocity.magnitude > topSpeed)
+        {
+            rb.linearVelocity = rb.linearVelocity.normalized * topSpeed;
         }
     }
+}
 
     private void OnTriggerEnter2D(Collider2D other)
     {

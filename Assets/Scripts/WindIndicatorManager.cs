@@ -9,7 +9,7 @@ public class WindIndicatorManager : MonoBehaviour
     public GameObject boat;
 
     [Header("Settings")]
-    public float maxWindSpeed = 20f;
+    public float maxWindSpeed = 2f;
     public float windDirection;
     public float windSpeed;
 
@@ -29,7 +29,7 @@ public class WindIndicatorManager : MonoBehaviour
     {
         if (windSpeedSprites.Length > 0)
         {
-            int spriteIndex = Mathf.FloorToInt((windSpeed / maxWindSpeed) * (windSpeedSprites.Length));
+            int spriteIndex = Mathf.FloorToInt(windSpeed / maxWindSpeed * windSpeedSprites.Length);
             if (spriteIndex == 0){
                 spriteIndex = 1;
             }
