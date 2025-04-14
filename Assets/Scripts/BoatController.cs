@@ -7,6 +7,7 @@ public class BoatController : MonoBehaviour
 {
     public Animator boatAnimator;
     public Boolean inBoat = false;
+    public Boolean anchored = false;
     [Header("-- Player Interaction Setup --")]
     public SpriteRenderer playerMainRenderer;
     public MonoBehaviour playerMovementScript;
@@ -48,8 +49,8 @@ public class BoatController : MonoBehaviour
         if (inBoat)
         {
             scaledWindSpeed = sailsUpScaler * windSpeed;
-
-            if (Input.GetKey(KeyCode.UpArrow) && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)))
+            
+            if (Input.GetKey(KeyCode.UpArrow) && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))) 
             {   
                 if (sailsUpScaler < 0.99f)
                 {
@@ -114,7 +115,7 @@ public class BoatController : MonoBehaviour
     {
         windDirection = weatherManager.GetWindDirection();
         windSpeed = weatherManager.GetWindSpeed();
-        if (inBoat)
+        if (inBoat && !anchored)
         {
             applyForces();
             LockPlayerToBoat();
@@ -142,7 +143,9 @@ public class BoatController : MonoBehaviour
         windForce = windForceVector + waterResistance;
 
         //net force
-        rb.AddForce(windForce);
+        if (windForce.magnitude > 0.1f) {
+            rb.AddForce(windForce);
+        }
 
         if (rb.linearVelocity.magnitude > topSpeed) {
             rb.linearVelocity = rb.linearVelocity.normalized * topSpeed;
