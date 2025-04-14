@@ -7,7 +7,7 @@ public class fishingGame : MonoBehaviour
     // Start is called before the first frame update
     public Rigidbody2D rb;
     public bool atTop;
-    public float targetTime;
+    public float targetTime = 4.0f;
     public float savedTargetTime;
     public bool spaceBar = false;
 
@@ -26,7 +26,6 @@ public class fishingGame : MonoBehaviour
 
     public Transform player;
     public float timeChangeRate = 0.25f;
-
     [SerializeField] private Collider2D indicatorCollider;
     private Collider2D barCollider;
 
@@ -61,15 +60,15 @@ public class fishingGame : MonoBehaviour
              onFish = false;
              playerS.fishGameLost();
              Destroy(GameObject.Find("bobber(Clone)"));
-             targetTime = 2 * timeChangeRate;
+             targetTime = 2.0f;
          }
-         if (targetTime >= 8 * timeChangeRate + 0.1f)
+         if (targetTime >= 4.5f)
          {
              transform.localPosition = new Vector3(-0.129f, -0.919f, 0);
              onFish = false;
              playerS.fishGameWon();
              Destroy(GameObject.Find("bobber(Clone)"));
-             targetTime = 2 * timeChangeRate;
+             targetTime = 2.0f;
          }
 
          if(targetTime >= 0.0f)
@@ -83,7 +82,7 @@ public class fishingGame : MonoBehaviour
              p7.SetActive(false);
              p8.SetActive(false);
          }
-         if (targetTime >= timeChangeRate)
+         if (targetTime >= 0.5f)
          {
              p1.SetActive(true);
              p2.SetActive(false);
@@ -94,7 +93,7 @@ public class fishingGame : MonoBehaviour
              p7.SetActive(false);
              p8.SetActive(false);
          }
-         if (targetTime >= 2 * timeChangeRate)
+         if (targetTime >= 1.0f)
          {
              p1.SetActive(true);
              p2.SetActive(true);
@@ -105,7 +104,7 @@ public class fishingGame : MonoBehaviour
              p7.SetActive(false);
              p8.SetActive(false);
          }
-         if (targetTime >= 3 * timeChangeRate)
+         if (targetTime >= 1.5f)
          {
              p1.SetActive(true);
              p2.SetActive(true);
@@ -116,7 +115,7 @@ public class fishingGame : MonoBehaviour
              p7.SetActive(false);
              p8.SetActive(false);
          }
-         if (targetTime >= 4 * timeChangeRate)
+         if (targetTime >= 2.0f)
          {
              p1.SetActive(true);
              p2.SetActive(true);
@@ -127,7 +126,7 @@ public class fishingGame : MonoBehaviour
              p7.SetActive(false);
              p8.SetActive(false);
          }
-         if (targetTime >= 5 * timeChangeRate)
+         if (targetTime >= 2.5f)
          {
              p1.SetActive(true);
              p2.SetActive(true);
@@ -138,7 +137,7 @@ public class fishingGame : MonoBehaviour
              p7.SetActive(false);
              p8.SetActive(false);
          }
-         if (targetTime >= 6 * timeChangeRate)
+         if (targetTime >= 3.0f)
          {
              p1.SetActive(true);
              p2.SetActive(true);
@@ -149,7 +148,7 @@ public class fishingGame : MonoBehaviour
              p7.SetActive(false);
              p8.SetActive(false);
          }
-         if (targetTime >= 7 * timeChangeRate)
+         if (targetTime >= 3.5f)
          {
              p1.SetActive(true);
              p2.SetActive(true);
@@ -160,7 +159,7 @@ public class fishingGame : MonoBehaviour
              p7.SetActive(true);
              p8.SetActive(false);
          }
-         if (targetTime >= 8 * timeChangeRate)
+         if (targetTime >= 4.0f)
          {
              p1.SetActive(true);
              p2.SetActive(true);

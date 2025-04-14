@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Numerics;
 using UnityEditor.Callbacks;
 using UnityEngine;
@@ -12,7 +11,7 @@ public class BoatController : MonoBehaviour
     public SpriteRenderer playerMainRenderer;
     public MonoBehaviour playerMovementScript;
     public Transform player;
-    public UnityEngine.Vector3 playerOffset = new UnityEngine.Vector3(0, -10, 0);
+    public UnityEngine.Vector3 playerOffset = new UnityEngine.Vector3(0, 0, 0);
     [Header("-- Sailing Physics -- ")]
     public float sailAngle = 180f;
     public float windSpeed = 10f;
@@ -131,8 +130,6 @@ public class BoatController : MonoBehaviour
                 rb.linearVelocity = rb.linearVelocity.normalized * topSpeed;
             }
         }
-
-        if (inBoat) LockPlayerToBoat();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
