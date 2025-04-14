@@ -6,9 +6,9 @@ using Unity.VisualScripting;
 
 public class fishing : MonoBehaviour
 {
-    // Start is called before the first frame update
     public Animator playerAnim;
     private GameObject spawnBobber;
+    public Rigidbody2D boat;
     public bool isFishing;
     public bool poleBack;
     public bool throwBobber;
@@ -34,6 +34,12 @@ public class fishing : MonoBehaviour
     private bool canRange = true;
     private Vector3 mousePos;
     private bool freeze = false;
+
+    private GameObject Inventoy;
+
+    private float cooldown = 0.0f;
+
+    private InventoryManager inventoryManager;
     void Start()
     {
         isFishing = false;
@@ -43,6 +49,7 @@ public class fishing : MonoBehaviour
         targetTime = 0.0f;
         savedTargetTime = 0.0f;
         extraBobberDistance = 0.0f;
+        inventoryManager = FindObjectOfType<InventoryManager>();
     }
 
     // Update is called once per frame
@@ -54,7 +61,7 @@ public class fishing : MonoBehaviour
             player.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
 
-        if(Input.GetKey(KeyCode.Space) && isFishing == false && winnerAnim == false && canRange == true)
+        if(Input.GetKey(KeyCode.Space) && isFishing == false && winnerAnim == false && canRange == true && boat.linearVelocity.magnitude <= 0.1f)
         {
             freeze = true;
             fishingTarget.SetActive(true);
@@ -80,7 +87,7 @@ public class fishing : MonoBehaviour
         }
 
 
-        if(Input.GetKeyUp(KeyCode.Space) && isFishing == false && winnerAnim == false)
+        if(Input.GetKeyUp(KeyCode.Space) && isFishing == false && winnerAnim == false && boat.linearVelocity.magnitude <= 0.1f)
         {
             target.SetActive(true);
             clickTime = true;
@@ -110,6 +117,7 @@ public class fishing : MonoBehaviour
                 isFishing = false;
                 canRange = true;
                 fishGameLost();
+                cooldown = 1.0f;
             }
             clickTime = false;
         }
@@ -149,6 +157,8 @@ public class fishing : MonoBehaviour
         throwBobber = false;
         timeTillCatch = 0;
         fishingTarget.SetActive(false);
+        GameObject prefab = Resources.Load<GameObject>("Carp");
+        inventoryManager.AddItemToInventory(prefab);
     } 
     public void fishGameLost()
     {

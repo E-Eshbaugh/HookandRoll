@@ -1,55 +1,77 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class InventoryManager : MonoBehaviour
 {
-    // inventory is set up into two separate parts, so we need both
-    public Transform inventoryToolbar;
-    public Transform inventoryMain;
+    private List<Item> items = new List<Item>();
+    private InventorySlot[] slots;
     
-    // function to check if we already have an item of a certain type
-    public bool HaveItemOfType(Item.ItemType type) {
-        foreach (Transform slot in inventoryToolbar) {
-            Item item = slot.GetComponentInChildren<Item>();
-            if (item != null && item.type == type) {
-                return true;
-            }
+    void Start()
+    {
+        //This currently has a bug, and only finds the hotbar, need to discuss fixes 
+        slots = FindObjectsByType<InventorySlot>(FindObjectsSortMode.None);
+        
+        /*// Test code
+        GameObject prefab = Resources.Load<GameObject>("Carp");
+        if (prefab != null) {
+            AddItemToInventory(prefab);
         }
-        foreach (Transform slot in inventoryMain) {
-             Item item = slot.GetComponentInChildren<Item>();
-            if (item != null && item.type == type) {
-                return true;
-            }
-        }
-        return false;
+        else {
+            Debug.LogError("Prefab not found!");
+        } */
     }
-
-    public bool addItem(Item itemPrefab) {
-        foreach (Transform slot in inventoryToolbar) {
-            if (slot.childCount == 0) {
-                Item newItem = Instantiate(itemPrefab, slot);
-                newItem.transform.localPosition = Vector2.zero;
-
-                Item itemScript = newItem.GetComponent<Item>();
-                if (itemScript != null) {
-                    itemScript.parentAfterDrag = slot;
-                }
-                return true;
+    
+    public void AddItemToInventory(GameObject itemPrefab)
+    {
+        if (itemPrefab == null) {
+            Debug.LogError("Item prefab is null!");
+            return;
+        }
+        
+        GameObject itemInstance = Instantiate(itemPrefab);
+        Item item = itemInstance.GetComponent<Item>();
+        if (item != null)
+        {
+            AddToInventory(item);
+        }
+        else
+        {
+            Debug.LogError("Prefab does not have an Item component");
+            Destroy(itemInstance);
+        }
+    }
+    
+    public void AddToInventory(Item item)
+    {
+        // Add to list
+        items.Add(item);
+        
+        // Find empty slot
+        InventorySlot emptySlot = FindEmptySlot();
+        if (emptySlot != null)
+        {
+            emptySlot.AddItem(item);
+        }
+        else
+        {
+            Debug.LogWarning("No empty slots available!");
+            items.Remove(item);
+            Destroy(item.gameObject);
+        }
+    }
+    
+    private InventorySlot FindEmptySlot()
+    {
+        foreach (InventorySlot slot in slots)
+        {
+            if (slot.IsEmpty())
+            {
+                return slot;
             }
         }
-        foreach (Transform slot in inventoryMain) {
-            if (slot.childCount == 0) {
-                Item newItem = Instantiate(itemPrefab, slot);
-                newItem.transform.localPosition = Vector2.zero;
-
-                Item itemScript = newItem.GetComponent<Item>();
-                if (itemScript != null) {
-                    itemScript.parentAfterDrag = slot;
-                }
-                return true;
-            }
-        }
-        Debug.LogWarning("No open inventory slots");
-        return false;
+        return null;
     }
 }
