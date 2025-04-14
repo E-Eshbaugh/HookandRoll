@@ -6,12 +6,16 @@ public class WindIndicatorManager : MonoBehaviour
     [Header("References")]
     public Image windArrow;
     public Sprite[] windSpeedSprites;
-    public GameObject boat;
+    Vector2 windDirection;
+    float windSpeed;
+    float maxWindSpeed;
 
-    [Header("Settings")]
-    public float maxWindSpeed = 2f;
-    public float windDirection;
-    public float windSpeed;
+    void Start()
+    {
+        windDirection = GetComponent<WeatherManager>().GetWindDirection();
+        windSpeed = GetComponent<WeatherManager>().GetWindSpeed();
+        maxWindSpeed = GetComponent<WeatherManager>().maxWindSpeed;
+    }
 
     public void UpdateWindIndicator(Vector2 windDirection, float windSpeed)
     {
@@ -44,9 +48,10 @@ public class WindIndicatorManager : MonoBehaviour
 
     void Update()
     {
-        windDirection = boat.GetComponent<BoatController>().windDirection;
-        Vector2 vWindDirection = new Vector2(Mathf.Cos(windDirection * Mathf.Deg2Rad), Mathf.Sin(windDirection * Mathf.Deg2Rad));
-        windSpeed = boat.GetComponent<BoatController>().windSpeed;
+        windDirection = GetComponent<WeatherManager>().GetWindDirection();
+        windSpeed = GetComponent<WeatherManager>().GetWindSpeed();
+        float angle = Mathf.Atan2(windDirection.y, windDirection.x);
+        Vector2 vWindDirection = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
         UpdateWindIndicator(vWindDirection, windSpeed);
     }
 }

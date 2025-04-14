@@ -110,6 +110,7 @@ public class BoatController : MonoBehaviour
     {
         if (inBoat)
         {
+            LockPlayerToBoat();
             float sailNormalAngle = (sailAngle + 90f) * Mathf.Deg2Rad;
             UnityEngine.Vector2 sailNormal = new UnityEngine.Vector2(Mathf.Cos(sailNormalAngle), Mathf.Sin(sailNormalAngle));
 
