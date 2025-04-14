@@ -4126,10 +4126,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3792056619041512919, guid: 265bf70587edf44da83bfbf33e64462b, type: 3}
-      propertyPath: m_Name
-      value: PauseMenu
-      objectReference: {fileID: 0}
     - target: {fileID: 3805922734714634528, guid: 265bf70587edf44da83bfbf33e64462b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -4305,10 +4301,6 @@ PrefabInstance:
     - target: {fileID: 5119192190902036429, guid: 265bf70587edf44da83bfbf33e64462b, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5164413372504000849, guid: 265bf70587edf44da83bfbf33e64462b, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5790074800893554049, guid: 265bf70587edf44da83bfbf33e64462b, type: 3}
       propertyPath: m_AnchorMax.y
@@ -4623,9 +4615,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 4955104875040516664, guid: 265bf70587edf44da83bfbf33e64462b, type: 3}
-    - {fileID: 6008321698626678031, guid: 265bf70587edf44da83bfbf33e64462b, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 265bf70587edf44da83bfbf33e64462b, type: 3}
