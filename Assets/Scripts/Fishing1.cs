@@ -6,9 +6,9 @@ using Unity.VisualScripting;
 
 public class fishing : MonoBehaviour
 {
-    // Start is called before the first frame update
     public Animator playerAnim;
     private GameObject spawnBobber;
+    public Rigidbody2D boat;
     public bool isFishing;
     public bool poleBack;
     public bool throwBobber;
@@ -54,7 +54,7 @@ public class fishing : MonoBehaviour
             player.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
 
-        if(Input.GetKey(KeyCode.Space) && isFishing == false && winnerAnim == false && canRange == true)
+        if(Input.GetKey(KeyCode.Space) && isFishing == false && winnerAnim == false && canRange == true && boat.linearVelocity.magnitude <= 0.1f)
         {
             freeze = true;
             fishingTarget.SetActive(true);
@@ -80,7 +80,7 @@ public class fishing : MonoBehaviour
         }
 
 
-        if(Input.GetKeyUp(KeyCode.Space) && isFishing == false && winnerAnim == false)
+        if(Input.GetKeyUp(KeyCode.Space) && isFishing == false && winnerAnim == false && boat.linearVelocity.magnitude <= 0.1f)
         {
             target.SetActive(true);
             clickTime = true;

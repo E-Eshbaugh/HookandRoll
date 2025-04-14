@@ -60,15 +60,15 @@ public class fishingGame : MonoBehaviour
              onFish = false;
              playerS.fishGameLost();
              Destroy(GameObject.Find("bobber(Clone)"));
-             targetTime = 4.0f;
+             targetTime = 2.0f;
          }
-         if (targetTime >= 8.0f)
+         if (targetTime >= 4.5f)
          {
              transform.localPosition = new Vector3(-0.129f, -0.919f, 0);
              onFish = false;
              playerS.fishGameWon();
              Destroy(GameObject.Find("bobber(Clone)"));
-             targetTime = 4.0f;
+             targetTime = 2.0f;
          }
 
          if(targetTime >= 0.0f)
@@ -82,7 +82,7 @@ public class fishingGame : MonoBehaviour
              p7.SetActive(false);
              p8.SetActive(false);
          }
-         if (targetTime >= 1.0f)
+         if (targetTime >= 0.5f)
          {
              p1.SetActive(true);
              p2.SetActive(false);
@@ -93,7 +93,7 @@ public class fishingGame : MonoBehaviour
              p7.SetActive(false);
              p8.SetActive(false);
          }
-         if (targetTime >= 2.0f)
+         if (targetTime >= 1.0f)
          {
              p1.SetActive(true);
              p2.SetActive(true);
@@ -104,7 +104,7 @@ public class fishingGame : MonoBehaviour
              p7.SetActive(false);
              p8.SetActive(false);
          }
-         if (targetTime >= 3.0f)
+         if (targetTime >= 1.5f)
          {
              p1.SetActive(true);
              p2.SetActive(true);
@@ -115,7 +115,7 @@ public class fishingGame : MonoBehaviour
              p7.SetActive(false);
              p8.SetActive(false);
          }
-         if (targetTime >= 4.0f)
+         if (targetTime >= 2.0f)
          {
              p1.SetActive(true);
              p2.SetActive(true);
@@ -126,7 +126,7 @@ public class fishingGame : MonoBehaviour
              p7.SetActive(false);
              p8.SetActive(false);
          }
-         if (targetTime >= 5.0f)
+         if (targetTime >= 2.5f)
          {
              p1.SetActive(true);
              p2.SetActive(true);
@@ -137,7 +137,7 @@ public class fishingGame : MonoBehaviour
              p7.SetActive(false);
              p8.SetActive(false);
          }
-         if (targetTime >= 6.0f)
+         if (targetTime >= 3.0f)
          {
              p1.SetActive(true);
              p2.SetActive(true);
@@ -148,7 +148,7 @@ public class fishingGame : MonoBehaviour
              p7.SetActive(false);
              p8.SetActive(false);
          }
-         if (targetTime >= 7.0f)
+         if (targetTime >= 3.5f)
          {
              p1.SetActive(true);
              p2.SetActive(true);
@@ -159,7 +159,7 @@ public class fishingGame : MonoBehaviour
              p7.SetActive(true);
              p8.SetActive(false);
          }
-         if (targetTime >= 8.0f)
+         if (targetTime >= 4.0f)
          {
              p1.SetActive(true);
              p2.SetActive(true);
