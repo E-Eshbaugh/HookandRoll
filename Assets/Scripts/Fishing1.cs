@@ -34,6 +34,12 @@ public class fishing : MonoBehaviour
     private bool canRange = true;
     private Vector3 mousePos;
     private bool freeze = false;
+
+    private GameObject Inventoy;
+
+    private float cooldown = 0.0f;
+
+    private InventoryManager inventoryManager;
     void Start()
     {
         isFishing = false;
@@ -43,6 +49,7 @@ public class fishing : MonoBehaviour
         targetTime = 0.0f;
         savedTargetTime = 0.0f;
         extraBobberDistance = 0.0f;
+        inventoryManager = FindObjectOfType<InventoryManager>();
     }
 
     // Update is called once per frame
@@ -110,6 +117,7 @@ public class fishing : MonoBehaviour
                 isFishing = false;
                 canRange = true;
                 fishGameLost();
+                cooldown = 1.0f;
             }
             clickTime = false;
         }
@@ -149,6 +157,8 @@ public class fishing : MonoBehaviour
         throwBobber = false;
         timeTillCatch = 0;
         fishingTarget.SetActive(false);
+        GameObject prefab = Resources.Load<GameObject>("Carp");
+        inventoryManager.AddItemToInventory(prefab);
     } 
     public void fishGameLost()
     {

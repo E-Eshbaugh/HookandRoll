@@ -180,7 +180,7 @@ public class fishingGame : MonoBehaviour
         float travelDist = worldScreenHeight * 0.2f;
 
         // Normalized forces
-        float baseForce = 70.0f;
+        float baseForce = 20.0f;
         float normalizedForce = baseForce * Time.fixedDeltaTime;
 
         if (rbCoords.y < playerPosition.y - travelDist)
