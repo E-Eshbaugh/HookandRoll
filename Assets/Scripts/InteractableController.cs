@@ -11,13 +11,16 @@ public class InteractableController : MonoBehaviour
     public bool playerInRange = false;
     public bool interact = false;
     public string sceneToLoad;
-    
+    private InventoryManager inventory;
+    private bool givenItem;
+
     void Start()
     {
         if (interactionText != null)
         {
             interactionText.SetActive(false); // Hide text at the start
         }
+        inventory = FindObjectOfType<InventoryManager>();
     }
 
     // Update is called once per frame
@@ -32,6 +35,11 @@ public class InteractableController : MonoBehaviour
             timer += Time.deltaTime;
             float fillAmount = Mathf.Clamp01(timer / timeToFill);
             progressBar.localScale = new Vector3(fillAmount, 0.25f, 1);
+            if (timer >= timeToFill && !givenItem) {
+                GameObject item = Resources.Load<GameObject>("default");
+                inventory.AddItemToInventory(item);
+               
+            }
         }
         
     }
@@ -44,6 +52,7 @@ public class InteractableController : MonoBehaviour
             interactionText.SetActive(true);
             isActive = true;
             timer = 0f;
+            givenItem = false;
         }
     }
 

@@ -41,7 +41,7 @@ public class Item : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
         transform.SetParent(parentAfterDrag);
     }
 
-    public ItemType type = ItemType.Generic;
+    public ItemType type;
     private SpriteRenderer spriteRenderer;
 
     private void Awake()
@@ -59,5 +59,9 @@ public class Item : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     public void SetPosition(Vector3 position)
     {
         transform.position = position;
+    }
+
+    public Item() {
+        type = ItemType.Generic;
     }
 }
