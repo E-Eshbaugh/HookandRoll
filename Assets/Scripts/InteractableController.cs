@@ -20,7 +20,7 @@ public class InteractableController : MonoBehaviour
         {
             interactionText.SetActive(false); // Hide text at the start
         }
-        inventory = FindObjectOfType<InventoryManager>();
+        inventory = FindAnyObjectByType<InventoryManager>();
     }
 
     // Update is called once per frame
@@ -38,7 +38,7 @@ public class InteractableController : MonoBehaviour
             if (timer >= timeToFill && !givenItem) {
                 GameObject item = Resources.Load<GameObject>("default");
                 inventory.AddItemToInventory(item);
-               
+                givenItem = true;
             }
         }
         
