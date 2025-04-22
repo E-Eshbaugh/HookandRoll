@@ -13,6 +13,7 @@ public class InteractableController : MonoBehaviour
     public string sceneToLoad;
     private InventoryManager inventory;
     private bool givenItem;
+    public GameObject itemToGive;
 
     void Start()
     {
@@ -21,25 +22,28 @@ public class InteractableController : MonoBehaviour
             interactionText.SetActive(false); // Hide text at the start
         }
         inventory = FindAnyObjectByType<InventoryManager>();
+        if (itemToGive == null) {
+            itemToGive = Resources.Load<GameObject>("default");
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (playerInRange && Input.GetKeyDown(KeyCode.I))
+        if (playerInRange && Input.GetKey(KeyCode.I))
         {
             Interact();
-            
-        }
-        if (isActive) {
-            timer += Time.deltaTime;
-            float fillAmount = Mathf.Clamp01(timer / timeToFill);
-            progressBar.localScale = new Vector3(fillAmount, 0.25f, 1);
-            if (timer >= timeToFill && !givenItem) {
-                GameObject item = Resources.Load<GameObject>("default");
-                inventory.AddItemToInventory(item);
-                givenItem = true;
+            if (isActive) {
+                timer += Time.deltaTime;
+                float fillAmount = Mathf.Clamp01(timer / timeToFill);
+                progressBar.localScale = new Vector3(fillAmount, 0.25f, 1);
+                if (timer >= timeToFill && !givenItem) {
+                    inventory.AddItemToInventory(itemToGive);
+                    givenItem = true;
+                }
             }
+        } else if (!Input.GetKey(KeyCode.I) && timer > 0f) {
+            ResetBar();
         }
         
     }
@@ -64,13 +68,20 @@ public class InteractableController : MonoBehaviour
             interactionText.SetActive(false);
             isActive = false;
             timer = 0f;
-            progressBar.localScale = new Vector3(0, 1, 1);
+            progressBar.localScale = new Vector2(0, 1);
         }
     }
 
     private void Interact()
     {
        interact = true;
+       
        //SceneManager.LoadScene(sceneToLoad);
+    }
+
+    private void ResetBar() {
+        timer = 0f;
+        progressBar.localScale = new Vector2(0, 1);
+        givenItem = false;
     }
 }

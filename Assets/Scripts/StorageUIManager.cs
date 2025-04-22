@@ -12,7 +12,7 @@ public class StorageUIManager : MonoBehaviour
     [SerializeField] private int desiredColumnCount = 3; // How many columns the grid should have
     [SerializeField] private Vector2 cellSize = new Vector2(50f, 50f); // Size of each slot
     [SerializeField] private Vector2 spacing = new Vector2(2.5f, 2.5f); // Space between slots
-    [SerializeField] private RectOffset padding = new RectOffset(0, 0, 0, 0); // Padding around the grid
+    [SerializeField] private RectOffset padding; // Padding around the grid
 
     private Storage currentOpenStorage; // The storage currently being viewed
     private List<GameObject> currentUISlots = new List<GameObject>();
@@ -57,6 +57,7 @@ public class StorageUIManager : MonoBehaviour
         // If itemContainer is a child, you might need gridLayoutGroup = itemContainer.GetComponent<GridLayoutGroup>();
         // Let's assume it's on the same object for now based on previous findings.
         gridLayoutGroup = GetComponent<GridLayoutGroup>();
+        padding = new RectOffset(0, 0, 0, 0);
 
         if (panelRectTransform == null)
         {
