@@ -158,9 +158,9 @@ public class fishing : MonoBehaviour
         timeTillCatch = 0;
         fishingTarget.SetActive(false);
 
-        fishname = "Carp";
+        string fishname = "Carp";
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if (mousePos.x > 20):
+        if (mousePos.x > 20)
         {
             fishname = "Tuna";
         }
