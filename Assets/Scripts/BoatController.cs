@@ -8,6 +8,7 @@ public class BoatController : MonoBehaviour
     public Animator boatAnimator;
     public Boolean inBoat = false;
     public Boolean anchored = false;
+    [SerializeField] private GameObject sailIndicator;
     [Header("-- Player Interaction Setup --")]
     public SpriteRenderer playerMainRenderer;
     public MonoBehaviour playerMovementScript;
@@ -41,10 +42,12 @@ public class BoatController : MonoBehaviour
 
         windDirection = GetComponent<WeatherManager>().GetWindDirection();
         windSpeed = GetComponent<WeatherManager>().GetWindSpeed();
+
     }
 
     void Update()
     {
+        sailIndicator.SetActive(inBoat);
         // ================================= Movement Checks =================================
         if (inBoat)
         {
