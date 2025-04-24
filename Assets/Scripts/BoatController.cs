@@ -6,9 +6,10 @@ using UnityEngine;
 public class BoatController : MonoBehaviour
 {
     public Animator boatAnimator;
+    public GameObject Compass; // Assign the parent Compass GameObject in the Inspector
     public Boolean inBoat = false;
     public Boolean anchored = false;
-    [SerializeField] private GameObject sailIndicator;
+    // [SerializeField] private GameObject sailIndicator;
     [Header("-- Player Interaction Setup --")]
     public SpriteRenderer playerMainRenderer;
     public MonoBehaviour playerMovementScript;
@@ -43,18 +44,23 @@ public class BoatController : MonoBehaviour
         windDirection = GetComponent<WeatherManager>().GetWindDirection();
         windSpeed = GetComponent<WeatherManager>().GetWindSpeed();
 
+        // Ensure compass starts hidden
+        if (Compass != null)
+        {
+            Compass.SetActive(false);
+        }
     }
 
     void Update()
     {
-        sailIndicator.SetActive(inBoat);
+        // sailIndicator.SetActive(inBoat);
         // ================================= Movement Checks =================================
         if (inBoat)
         {
             scaledWindSpeed = sailsUpScaler * windSpeed;
             
-            if (Input.GetKey(KeyCode.UpArrow) && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))) 
-            {   
+            if (Input.GetKey(KeyCode.UpArrow) && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)))
+            {
                 if (sailsUpScaler < 0.99f)
                 {
                     sailsUpScaler += 0.01f;
@@ -104,7 +110,7 @@ public class BoatController : MonoBehaviour
                 sailAngle = 90f;
             }
             else if (Input.GetKey(KeyCode.DownArrow))
-            {
+                     {
                 boatAnimator.Play("BoatDown");
                 sailAngle = 270f;
             }
@@ -170,6 +176,10 @@ public class BoatController : MonoBehaviour
             inBoat = true;
             LockPlayerToBoat();
             cameraController.inBoat = true;
+            if (Compass != null) 
+            {
+                Compass.SetActive(true);
+            }
         }
     }
 
@@ -177,8 +187,10 @@ public class BoatController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            //inBoat = false;
-            //cameraController.inBoat = true;
+            inBoat = false; // Player is no longer in the boat
+            ReleasePlayerFromBoat(); // Release player control
+            cameraController.inBoat = false; // Camera should follow player now
+            if (Compass != null) Compass.SetActive(false); // Hide compass
         }
     }
 
