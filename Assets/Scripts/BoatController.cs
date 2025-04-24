@@ -105,6 +105,10 @@ public class BoatController : MonoBehaviour
                 boatAnimator.Play("BoatDown");
                 sailAngle = 270f;
             }
+            else if (Input.GetKeyDown(KeyCode.J))
+            {
+                anchored = !anchored;
+            }
         }
 
         //=====================================================================================
@@ -115,10 +119,14 @@ public class BoatController : MonoBehaviour
     {
         windDirection = weatherManager.GetWindDirection();
         windSpeed = weatherManager.GetWindSpeed();
-        if (inBoat && !anchored)
+        if (inBoat)
         {
+            if (anchored) {
+                rb.linearVelocity = UnityEngine.Vector2.zero;
+            } else {
             applyForces();
             LockPlayerToBoat();
+            }
         }
     }
 
