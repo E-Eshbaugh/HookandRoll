@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 1239651fccefe401fa4c51481d2eb542
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4488670705117876693
+    second: beachsprites2_0
+  - first:
+      213: -8408795879682910242
+    second: beachsprites2_1
+  - first:
+      213: 1294724582402992055
+    second: beachsprites2_2
+  - first:
+      213: 4689065849420873846
+    second: beachsprites2_3
+  - first:
+      213: -5616365674598318047
+    second: beachsprites2_4
+  - first:
+      213: 1553256113978075273
+    second: beachsprites2_5
+  - first:
+      213: -44773136379280645
+    second: beachsprites2_6
+  - first:
+      213: 8632103641071584828
+    second: beachsprites2_7
+  - first:
+      213: 7589842733155477048
+    second: beachsprites2_8
+  - first:
+      213: 4432734483529500605
+    second: beachsprites2_9
+  - first:
+      213: 2139769665037288980
+    second: beachsprites2_10
+  - first:
+      213: -3669104785012267931
+    second: beachsprites2_11
+  - first:
+      213: 5326435979478694767
+    second: beachsprites2_12
+  - first:
+      213: -7052183782235010930
+    second: beachsprites2_13
+  - first:
+      213: -8367700452462588741
+    second: beachsprites2_14
+  - first:
+      213: 8170817088150102880
+    second: beachsprites2_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: beachsprites2_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 799
+        width: 239
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d1d04c6936fa4e30800000000000000
+      internalID: 4488670705117876693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beachsprites2_1
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 795
+        width: 190
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed75bbaf2b4fd4b80800000000000000
+      internalID: -8408795879682910242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beachsprites2_2
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 797
+        width: 210
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b7a810e529c7f110800000000000000
+      internalID: 1294724582402992055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beachsprites2_3
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 799
+        width: 192
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 670852bdb88e21140800000000000000
+      internalID: 4689065849420873846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beachsprites2_4
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 568
+        width: 231
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120cedcfc29ae02b0800000000000000
+      internalID: -5616365674598318047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beachsprites2_5
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 573
+        width: 188
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 988edd6c4364e8510800000000000000
+      internalID: 1553256113978075273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beachsprites2_6
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 573
+        width: 205
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf202a6d11fe06ff0800000000000000
+      internalID: -44773136379280645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beachsprites2_7
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 573
+        width: 185
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c368d66d6846bc770800000000000000
+      internalID: 8632103641071584828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beachsprites2_8
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 296
+        width: 257
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 836efcac0c9845960800000000000000
+      internalID: 7589842733155477048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beachsprites2_9
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 296
+        width: 172
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db78662f68c348d30800000000000000
+      internalID: 4432734483529500605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beachsprites2_10
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 295
+        width: 218
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41644b16c2df1bd10800000000000000
+      internalID: 2139769665037288980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beachsprites2_11
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 295
+        width: 215
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56468a543a8b41dc0800000000000000
+      internalID: -3669104785012267931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beachsprites2_12
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 16
+        width: 251
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6bffab7d4d4be940800000000000000
+      internalID: 5326435979478694767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beachsprites2_13
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 87
+        width: 226
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e888c11d63c912e90800000000000000
+      internalID: -7052183782235010930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beachsprites2_14
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 16
+        width: 291
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc8710c5c4ffdb80800000000000000
+      internalID: -8367700452462588741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beachsprites2_15
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 0
+        width: 210
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 063e0efc9d2946170800000000000000
+      internalID: 8170817088150102880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      beachsprites2_0: 4488670705117876693
+      beachsprites2_1: -8408795879682910242
+      beachsprites2_10: 2139769665037288980
+      beachsprites2_11: -3669104785012267931
+      beachsprites2_12: 5326435979478694767
+      beachsprites2_13: -7052183782235010930
+      beachsprites2_14: -8367700452462588741
+      beachsprites2_15: 8170817088150102880
+      beachsprites2_2: 1294724582402992055
+      beachsprites2_3: 4689065849420873846
+      beachsprites2_4: -5616365674598318047
+      beachsprites2_5: 1553256113978075273
+      beachsprites2_6: -44773136379280645
+      beachsprites2_7: 8632103641071584828
+      beachsprites2_8: 7589842733155477048
+      beachsprites2_9: 4432734483529500605
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
