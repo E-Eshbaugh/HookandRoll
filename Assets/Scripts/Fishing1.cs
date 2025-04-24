@@ -157,7 +157,19 @@ public class fishing : MonoBehaviour
         throwBobber = false;
         timeTillCatch = 0;
         fishingTarget.SetActive(false);
-        GameObject prefab = Resources.Load<GameObject>("Carp");
+
+        fishname = "Carp";
+        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if (mousePos.x > 20):
+        {
+            fishname = "Tuna";
+        }
+        else if (mousePos.x < -20)
+        {
+            fishname = "Angler";
+        }
+
+        GameObject prefab = Resources.Load<GameObject>(fishname);
         inventoryManager.AddItemToInventory(prefab);
     } 
     public void fishGameLost()
