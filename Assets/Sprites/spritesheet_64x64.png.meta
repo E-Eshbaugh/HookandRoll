@@ -759,7 +759,33 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spritesheet_64x64_0: -5040933321996088221
+      spritesheet_64x64_1: -342638971232950208
+      spritesheet_64x64_10: 7839361318715929415
+      spritesheet_64x64_11: 197085210720140371
+      spritesheet_64x64_12: -6352320814629187498
+      spritesheet_64x64_13: 7726863533539167871
+      spritesheet_64x64_14: 4527604368508446884
+      spritesheet_64x64_15: -7627599620134767248
+      spritesheet_64x64_16: 399638314624348459
+      spritesheet_64x64_17: -7589959266544518854
+      spritesheet_64x64_18: -3688505770273355628
+      spritesheet_64x64_19: 7180279607445886485
+      spritesheet_64x64_2: -1215597410942081170
+      spritesheet_64x64_20: 7539871130002065311
+      spritesheet_64x64_21: 2028491006948030904
+      spritesheet_64x64_22: 3468200701577496468
+      spritesheet_64x64_23: 2415384489877874444
+      spritesheet_64x64_24: 1430357216614031729
+      spritesheet_64x64_25: 2037717460506480754
+      spritesheet_64x64_3: 6197453071928870024
+      spritesheet_64x64_4: -355909863334405517
+      spritesheet_64x64_5: -4179638922063393540
+      spritesheet_64x64_6: 3958556807202767294
+      spritesheet_64x64_7: 781952715874697544
+      spritesheet_64x64_8: -6259034957719645139
+      spritesheet_64x64_9: 4047868865045342574
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
