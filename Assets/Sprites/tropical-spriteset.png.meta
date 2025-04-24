@@ -171,6 +171,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -759,7 +772,33 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tropical-spriteset_0: -629290090846634584
+      tropical-spriteset_1: -2458670388434417944
+      tropical-spriteset_10: -6946758603216262681
+      tropical-spriteset_11: -4775678186752521003
+      tropical-spriteset_12: -4383675950899687501
+      tropical-spriteset_13: 7456947442256533006
+      tropical-spriteset_14: 7556521072843241945
+      tropical-spriteset_15: -9150953633962157362
+      tropical-spriteset_16: -2539517488257725212
+      tropical-spriteset_17: -7691812720537934907
+      tropical-spriteset_18: 2587818503868508570
+      tropical-spriteset_19: -4439463302577618479
+      tropical-spriteset_2: 2334646148475659296
+      tropical-spriteset_20: 1842117165388400360
+      tropical-spriteset_21: -4858220862889010521
+      tropical-spriteset_22: 314884850856832537
+      tropical-spriteset_23: 3183461878579576398
+      tropical-spriteset_24: 8603497954559386136
+      tropical-spriteset_25: -7716150535231604857
+      tropical-spriteset_3: 115534479258082963
+      tropical-spriteset_4: -2593100220875929297
+      tropical-spriteset_5: 5616866970368995999
+      tropical-spriteset_6: 4084155620545197298
+      tropical-spriteset_7: 5617323644805315613
+      tropical-spriteset_8: 5138558171844659159
+      tropical-spriteset_9: 4765863282270416851
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

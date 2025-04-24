@@ -141,6 +141,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +522,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      beachsprites2_0: 4488670705117876693
+      beachsprites2_1: -8408795879682910242
+      beachsprites2_10: 2139769665037288980
+      beachsprites2_11: -3669104785012267931
+      beachsprites2_12: 5326435979478694767
+      beachsprites2_13: -7052183782235010930
+      beachsprites2_14: -8367700452462588741
+      beachsprites2_15: 8170817088150102880
+      beachsprites2_2: 1294724582402992055
+      beachsprites2_3: 4689065849420873846
+      beachsprites2_4: -5616365674598318047
+      beachsprites2_5: 1553256113978075273
+      beachsprites2_6: -44773136379280645
+      beachsprites2_7: 8632103641071584828
+      beachsprites2_8: 7589842733155477048
+      beachsprites2_9: 4432734483529500605
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
