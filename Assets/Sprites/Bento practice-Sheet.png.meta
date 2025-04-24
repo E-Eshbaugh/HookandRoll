@@ -1,0 +1,1368 @@
+fileFormatVersion: 2
+guid: 601237178a337a44dba3f0e1643bed98
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5770251651603008875
+    second: Bento practice-Sheet_0
+  - first:
+      213: -8433896565516680671
+    second: Bento practice-Sheet_1
+  - first:
+      213: -5258256951233618834
+    second: Bento practice-Sheet_2
+  - first:
+      213: -7375039726739159172
+    second: Bento practice-Sheet_3
+  - first:
+      213: 528968461089181580
+    second: Bento practice-Sheet_4
+  - first:
+      213: -4464707650312668839
+    second: Bento practice-Sheet_5
+  - first:
+      213: -7584156875580627465
+    second: Bento practice-Sheet_6
+  - first:
+      213: -8443561885749760164
+    second: Bento practice-Sheet_7
+  - first:
+      213: -4875274525873413250
+    second: Bento practice-Sheet_8
+  - first:
+      213: -4390139152754475574
+    second: Bento practice-Sheet_9
+  - first:
+      213: -656953837468750609
+    second: Bento practice-Sheet_10
+  - first:
+      213: 2401324775773271807
+    second: Bento practice-Sheet_11
+  - first:
+      213: 2517994917455052269
+    second: Bento practice-Sheet_12
+  - first:
+      213: -7897557384646809072
+    second: Bento practice-Sheet_13
+  - first:
+      213: 1337398439421926
+    second: Bento practice-Sheet_14
+  - first:
+      213: 2134892272318999649
+    second: Bento practice-Sheet_15
+  - first:
+      213: 6568922372064579982
+    second: Bento practice-Sheet_16
+  - first:
+      213: -3837810314156249643
+    second: Bento practice-Sheet_17
+  - first:
+      213: 6545017626276719298
+    second: Bento practice-Sheet_18
+  - first:
+      213: -6986436334758571711
+    second: Bento practice-Sheet_19
+  - first:
+      213: -3074897754760530755
+    second: Bento practice-Sheet_20
+  - first:
+      213: 3171889939631692893
+    second: Bento practice-Sheet_21
+  - first:
+      213: -5319698972308068219
+    second: Bento practice-Sheet_22
+  - first:
+      213: -3243288554359717411
+    second: Bento practice-Sheet_23
+  - first:
+      213: 6013974720630157336
+    second: Bento practice-Sheet_24
+  - first:
+      213: 3763794203396134075
+    second: Bento practice-Sheet_25
+  - first:
+      213: -1898062799317231783
+    second: Bento practice-Sheet_26
+  - first:
+      213: -4952450209735305708
+    second: Bento practice-Sheet_27
+  - first:
+      213: 9064000895539169223
+    second: Bento practice-Sheet_28
+  - first:
+      213: -1694358157564835125
+    second: Bento practice-Sheet_29
+  - first:
+      213: -6162103277367842426
+    second: Bento practice-Sheet_30
+  - first:
+      213: 1490333592577778401
+    second: Bento practice-Sheet_31
+  - first:
+      213: -5610918292280611816
+    second: Bento practice-Sheet_32
+  - first:
+      213: 5174454663656483454
+    second: Bento practice-Sheet_33
+  - first:
+      213: 7937903319268166180
+    second: Bento practice-Sheet_34
+  - first:
+      213: 9054401950681814868
+    second: Bento practice-Sheet_35
+  - first:
+      213: 4929354980704986120
+    second: Bento practice-Sheet_36
+  - first:
+      213: 7274316649882023273
+    second: Bento practice-Sheet_37
+  - first:
+      213: -7154881570239683746
+    second: Bento practice-Sheet_38
+  - first:
+      213: -4946083579874572773
+    second: Bento practice-Sheet_39
+  - first:
+      213: -4093188960054344900
+    second: Bento practice-Sheet_40
+  - first:
+      213: 1638201190981787698
+    second: Bento practice-Sheet_41
+  - first:
+      213: -4827738272780874588
+    second: Bento practice-Sheet_42
+  - first:
+      213: 9189677373976598526
+    second: Bento practice-Sheet_43
+  - first:
+      213: -8873521325300776309
+    second: Bento practice-Sheet_44
+  - first:
+      213: -9092055944573192733
+    second: Bento practice-Sheet_45
+  - first:
+      213: -5352199275667476391
+    second: Bento practice-Sheet_46
+  - first:
+      213: -8659495773839474715
+    second: Bento practice-Sheet_47
+  - first:
+      213: -297694239773443475
+    second: Bento practice-Sheet_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bento practice-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 96
+        width: 54
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d88661e4d041050800000000000000
+      internalID: 5770251651603008875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 139
+        width: 33
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122cdf322c7c4fa80800000000000000
+      internalID: -8433896565516680671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 134
+        width: 63
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6cddfb892be607b0800000000000000
+      internalID: -5258256951233618834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 127
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c778153717896a990800000000000000
+      internalID: -7375039726739159172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 129
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f0b944306475700800000000000000
+      internalID: 528968461089181580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 959f42d0c0c2a02c0800000000000000
+      internalID: -4464707650312668839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 133
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f52e261189afb690800000000000000
+      internalID: -7584156875580627465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 95
+        width: 18
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5fabd8633172da80800000000000000
+      internalID: -8443561885749760164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 100
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e73edc626ab875cb0800000000000000
+      internalID: -4875274525873413250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 104
+        width: 63
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acdf88553b71313c0800000000000000
+      internalID: -4390139152754475574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 101
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fec68db27f702e6f0800000000000000
+      internalID: -656953837468750609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 105
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff67f4a2928335120800000000000000
+      internalID: 2401324775773271807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 104
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dedb5295907b1f220800000000000000
+      internalID: 2517994917455052269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 104
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a2dd6d66d366290800000000000000
+      internalID: -7897557384646809072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 100
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7a7e65b50c40000800000000000000
+      internalID: 1337398439421926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 101
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16cec45e539a0ad10800000000000000
+      internalID: 2134892272318999649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 69
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8196000810892b50800000000000000
+      internalID: 6568922372064579982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 69
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dde2655adb5dbac0800000000000000
+      internalID: -3837810314156249643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 73
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cae4e6aad294da50800000000000000
+      internalID: 6545017626276719298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 66
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14155d45b213b0f90800000000000000
+      internalID: -6986436334758571711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 69
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db43ad698c4c355d0800000000000000
+      internalID: -3074897754760530755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 65
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5cd16e3811d40c20800000000000000
+      internalID: 3171889939631692893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 63
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 588219b38f1ac26b0800000000000000
+      internalID: -5319698972308068219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 65
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd18c455e368df2d0800000000000000
+      internalID: -3243288554359717411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 69
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 810f65f152ee57350800000000000000
+      internalID: 6013974720630157336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 63
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb4d915f2eeab3430800000000000000
+      internalID: 3763794203396134075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 40
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 957105db0f9b8a5e0800000000000000
+      internalID: -1898062799317231783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 40
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4161be006cc554bb0800000000000000
+      internalID: -4952450209735305708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 32
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c74f669accc9cd70800000000000000
+      internalID: 9064000895539169223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 36
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bca00189b3e6c78e0800000000000000
+      internalID: -1694358157564835125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 33
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 689283ba7bfcb7aa0800000000000000
+      internalID: -6162103277367842426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 34
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e22e6e918abea410800000000000000
+      internalID: 1490333592577778401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 37
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81c6fd48a830222b0800000000000000
+      internalID: -5610918292280611816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 32
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7aab95e91b5fc740800000000000000
+      internalID: 5174454663656483454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 36
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42a8f561309192e60800000000000000
+      internalID: 7937903319268166180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 36
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4575ef31a92b7ad70800000000000000
+      internalID: 9054401950681814868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 7
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80429b4fc36986440800000000000000
+      internalID: 4929354980704986120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 6
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9657debb37093f460800000000000000
+      internalID: 7274316649882023273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 5
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e53efdbbe11c4bc90800000000000000
+      internalID: -7154881570239683746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 0
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b160f28803bfb5bb0800000000000000
+      internalID: -4946083579874572773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 0
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c330965d3521237c0800000000000000
+      internalID: -4093188960054344900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 230671bbd4f0cb610800000000000000
+      internalID: 1638201190981787698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 16
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ac865e8e9d600db0800000000000000
+      internalID: -4827738272780874588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 4
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef7d154f1ea488f70800000000000000
+      internalID: 9189677373976598526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 9
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b82089a5e5bead480800000000000000
+      internalID: -8873521325300776309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 5
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e57cb94a4782d180800000000000000
+      internalID: -9092055944573192733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 4
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 950bcbead1b29b5b0800000000000000
+      internalID: -5352199275667476391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 9
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef3d42497a43d780800000000000000
+      internalID: -8659495773839474715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bento practice-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 2
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6abf9a8aa06edbf0800000000000000
+      internalID: -297694239773443475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

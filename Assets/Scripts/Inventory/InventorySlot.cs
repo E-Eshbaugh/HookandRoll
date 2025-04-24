@@ -37,4 +37,8 @@ public class InventorySlot : MonoBehaviour, IDropHandler
         item.transform.localScale = Vector3.one;
         currentItem = item;
     }
+    
+    public Item GetItem() {
+        return currentItem;
+    }
 }

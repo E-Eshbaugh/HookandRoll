@@ -1,12 +1,12 @@
 using UnityEngine;
 
 
-public enum ItemType {
+/*public enum ItemType {
     Fish,
     Equipment,
     Sushi,
     Default
-}
+}*/
 public abstract class ItemObj : ScriptableObject
 {
 
@@ -15,7 +15,7 @@ public abstract class ItemObj : ScriptableObject
     }
     public int id;
     public GameObject prefab;
-    public ItemType type;
+    //public ItemType type;
 
     [TextArea(15,20)]
     public string description;

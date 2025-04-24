@@ -74,4 +74,24 @@ public class InventoryManager : MonoBehaviour
         }
         return null;
     }
+
+    public bool hasItemofType(Item item) {
+        foreach (InventorySlot slot in slots) {
+            if (slot.GetItem().type == item.type) {
+                return true;
+            }
+        }
+        if (item.type == Item.ItemType.Generic) {
+            
+        }
+        return false;
+    }
+
+    public void removeItem(Item item) {
+        foreach (InventorySlot slot in slots) {
+            if (hasItemofType(item)) {
+                Destroy(item);
+            }
+        }
+    }
 }

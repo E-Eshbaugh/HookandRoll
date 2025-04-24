@@ -14,6 +14,7 @@ public class InteractableController : MonoBehaviour
     private InventoryManager inventory;
     private bool givenItem;
     public GameObject itemToGive;
+    public  Item checkItem;
 
     void Start()
     {
@@ -25,12 +26,15 @@ public class InteractableController : MonoBehaviour
         if (itemToGive == null) {
             itemToGive = Resources.Load<GameObject>("default");
         }
+        if (checkItem == null) {
+             checkItem = new Item();
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (playerInRange && Input.GetKey(KeyCode.I))
+        if (playerInRange && Input.GetKey(KeyCode.I) && inventory.hasItemofType(checkItem))
         {
             Interact();
             if (isActive) {
@@ -44,6 +48,8 @@ public class InteractableController : MonoBehaviour
             }
         } else if (!Input.GetKey(KeyCode.I) && timer > 0f) {
             ResetBar();
+        } else if (!inventory.hasItemofType(checkItem)) {
+            interactionText.SetActive(true);
         }
         
     }
