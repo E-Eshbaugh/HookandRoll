@@ -125,5 +125,5 @@ MonoBehaviour:
   playerInRange: 0
   interact: 0
   sceneToLoad: 
-  inventory: {fileID: 0}
   itemToGive: {fileID: 0}
+  checkItem: []

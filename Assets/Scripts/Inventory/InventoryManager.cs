@@ -81,16 +81,14 @@ public class InventoryManager : MonoBehaviour
                 return true;
             }
         }
-        if (item.type == Item.ItemType.Generic) {
-            
-        }
         return false;
     }
 
     public void removeItem(Item item) {
         foreach (InventorySlot slot in slots) {
-            if (hasItemofType(item)) {
-                Destroy(item);
+            Item remove = slot.GetComponentInChildren<Item>();
+            if (remove != null && remove.type == item.type) {
+                Destroy(remove.gameObject);
             }
         }
     }

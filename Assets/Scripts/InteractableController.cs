@@ -1,6 +1,8 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
+using System.Collections.Generic;
 public class InteractableController : MonoBehaviour
 {
     public Transform progressBar;
@@ -14,7 +16,7 @@ public class InteractableController : MonoBehaviour
     private InventoryManager inventory;
     private bool givenItem;
     public GameObject itemToGive;
-    public  Item checkItem;
+    public List<Item> checkItem = new List<Item>();
 
     void Start()
     {
@@ -27,14 +29,14 @@ public class InteractableController : MonoBehaviour
             itemToGive = Resources.Load<GameObject>("default");
         }
         if (checkItem == null) {
-             checkItem = new Item();
+             checkItem.Add(this.AddComponent<Item>());
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (playerInRange && Input.GetKey(KeyCode.I) && inventory.hasItemofType(checkItem))
+        if (playerInRange && Input.GetKey(KeyCode.I))
         {
             Interact();
             if (isActive) {
@@ -42,17 +44,30 @@ public class InteractableController : MonoBehaviour
                 float fillAmount = Mathf.Clamp01(timer / timeToFill);
                 progressBar.localScale = new Vector3(fillAmount, 0.25f, 1);
                 if (timer >= timeToFill && !givenItem) {
-                    inventory.AddItemToInventory(itemToGive);
-                    givenItem = true;
-                }
+                    bool hasItems = true;
+                    foreach (Item requiredItem in checkItem) {
+                        if (requiredItem == null || !inventory.hasItemofType(requiredItem)) {
+                            hasItems = false;
+                            break;
+                        }
+                    }
+                    if (hasItems) {
+                        foreach (Item item in checkItem) {
+                            inventory.removeItem(item);
+                        }
+                        inventory.AddItemToInventory(itemToGive);
+                        givenItem = true;
+                        Debug.Log("gave item");
+                    } else {
+                        ResetBar();
+                }  
             }
-        } else if (!Input.GetKey(KeyCode.I) && timer > 0f) {
-            ResetBar();
-        } else if (!inventory.hasItemofType(checkItem)) {
-            interactionText.SetActive(true);
         }
+    } else if (!Input.GetKey(KeyCode.I) && timer > 0f) {
+        ResetBar();
+    } 
         
-    }
+}
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -74,7 +89,7 @@ public class InteractableController : MonoBehaviour
             interactionText.SetActive(false);
             isActive = false;
             timer = 0f;
-            progressBar.localScale = new Vector2(0, 1);
+            progressBar.localScale = new Vector3(0, 1, 1);
         }
     }
 
@@ -87,7 +102,7 @@ public class InteractableController : MonoBehaviour
 
     private void ResetBar() {
         timer = 0f;
-        progressBar.localScale = new Vector2(0, 1);
+        progressBar.localScale = new Vector3(0, 0.25f, 1);
         givenItem = false;
     }
 }
