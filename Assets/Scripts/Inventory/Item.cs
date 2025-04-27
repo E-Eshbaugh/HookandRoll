@@ -16,7 +16,9 @@ public class Item : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     {
         None,
         Generic, 
-        Fish
+        Rice,
+        Sushi,
+        Fish,
     }
     [HideInInspector] public Transform parentAfterDrag;
     // drag and drop

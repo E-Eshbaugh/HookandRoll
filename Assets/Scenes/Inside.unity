@@ -3419,6 +3419,10 @@ PrefabInstance:
       value: Stove
       objectReference: {fileID: 0}
     - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
+      propertyPath: interact
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
       propertyPath: checkItem
       value: 
       objectReference: {fileID: 1999435333954687996, guid: 8ee43084c97cd914bbb7f5804f508e46, type: 3}
@@ -3435,9 +3439,21 @@ PrefabInstance:
       value: Stove
       objectReference: {fileID: 0}
     - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
+      propertyPath: requiresItem
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
       propertyPath: interactionText
       value: 
       objectReference: {fileID: 595749831}
+    - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
+      propertyPath: checkItem.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
+      propertyPath: 'checkItem.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1999435333954687996, guid: 8ee43084c97cd914bbb7f5804f508e46, type: 3}
     - target: {fileID: 8682210569899091871, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
       propertyPath: m_BodyType
       value: 2
@@ -3778,6 +3794,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crates
       objectReference: {fileID: 0}
+    - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
+      propertyPath: checkItem
+      value: 
+      objectReference: {fileID: 1999435333954687996, guid: 8ee43084c97cd914bbb7f5804f508e46, type: 3}
+    - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
+      propertyPath: itemToGive
+      value: 
+      objectReference: {fileID: 723066895890787243, guid: 8ee43084c97cd914bbb7f5804f508e46, type: 3}
     - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
       propertyPath: progressBar
       value: 
@@ -5688,6 +5712,14 @@ PrefabInstance:
       value: RollingStation
       objectReference: {fileID: 0}
     - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
+      propertyPath: checkItem
+      value: 
+      objectReference: {fileID: 530231522040635723, guid: f1c61ae40c71c475a9cb573b0144a872, type: 3}
+    - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
+      propertyPath: itemToGive
+      value: 
+      objectReference: {fileID: 4500327683112348277, guid: 8ba6c3c9c031a4ecabe08092b5b9651b, type: 3}
+    - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
       propertyPath: progressBar
       value: 
       objectReference: {fileID: 2017425944}
@@ -5696,9 +5728,25 @@ PrefabInstance:
       value: RollingStation
       objectReference: {fileID: 0}
     - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
+      propertyPath: requiresItem
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
       propertyPath: interactionText
       value: 
       objectReference: {fileID: 595749831}
+    - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
+      propertyPath: checkItem.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
+      propertyPath: 'checkItem.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1999435333954687996, guid: 8ee43084c97cd914bbb7f5804f508e46, type: 3}
+    - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
+      propertyPath: 'checkItem.Array.data[1]'
+      value: 
+      objectReference: {fileID: 530231522040635723, guid: f1c61ae40c71c475a9cb573b0144a872, type: 3}
     - target: {fileID: 8682210569899091871, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
       propertyPath: m_BodyType
       value: 2
@@ -18047,6 +18095,14 @@ PrefabInstance:
       value: CuttingStation
       objectReference: {fileID: 0}
     - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
+      propertyPath: checkItem
+      value: 
+      objectReference: {fileID: 1109208248029951221, guid: f052dbb96b4204a96a95e063dee0be10, type: 3}
+    - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
+      propertyPath: itemToGive
+      value: 
+      objectReference: {fileID: 1651818961310030108, guid: f1c61ae40c71c475a9cb573b0144a872, type: 3}
+    - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
       propertyPath: progressBar
       value: 
       objectReference: {fileID: 2145740294}
@@ -18055,9 +18111,21 @@ PrefabInstance:
       value: Cutting
       objectReference: {fileID: 0}
     - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
+      propertyPath: requiresItem
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
       propertyPath: interactionText
       value: 
       objectReference: {fileID: 595749831}
+    - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
+      propertyPath: checkItem.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
+      propertyPath: 'checkItem.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1109208248029951221, guid: f052dbb96b4204a96a95e063dee0be10, type: 3}
     - target: {fileID: 8682210569899091871, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
       propertyPath: m_BodyType
       value: 2

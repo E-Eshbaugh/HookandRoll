@@ -89,6 +89,7 @@ public class InventoryManager : MonoBehaviour
             Item remove = slot.GetComponentInChildren<Item>();
             if (remove != null && remove.type == item.type) {
                 Destroy(remove.gameObject);
+                return;
             }
         }
     }

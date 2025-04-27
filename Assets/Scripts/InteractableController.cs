@@ -3,6 +3,8 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
 using System.Collections.Generic;
+
+
 public class InteractableController : MonoBehaviour
 {
     public Transform progressBar;
@@ -15,8 +17,8 @@ public class InteractableController : MonoBehaviour
     public string sceneToLoad;
     private InventoryManager inventory;
     private bool givenItem;
-    public GameObject itemToGive;
-    public List<Item> checkItem = new List<Item>();
+    public List<ItemRecipe> ReturnItems = new List<ItemRecipe>();
+
 
     void Start()
     {
@@ -25,12 +27,7 @@ public class InteractableController : MonoBehaviour
             interactionText.SetActive(false); // Hide text at the start
         }
         inventory = FindAnyObjectByType<InventoryManager>();
-        if (itemToGive == null) {
-            itemToGive = Resources.Load<GameObject>("default");
-        }
-        if (checkItem == null) {
-             checkItem.Add(this.AddComponent<Item>());
-        }
+
     }
 
     // Update is called once per frame
@@ -44,23 +41,7 @@ public class InteractableController : MonoBehaviour
                 float fillAmount = Mathf.Clamp01(timer / timeToFill);
                 progressBar.localScale = new Vector3(fillAmount, 0.25f, 1);
                 if (timer >= timeToFill && !givenItem) {
-                    bool hasItems = true;
-                    foreach (Item requiredItem in checkItem) {
-                        if (requiredItem == null || !inventory.hasItemofType(requiredItem)) {
-                            hasItems = false;
-                            break;
-                        }
-                    }
-                    if (hasItems) {
-                        foreach (Item item in checkItem) {
-                            inventory.removeItem(item);
-                        }
-                        inventory.AddItemToInventory(itemToGive);
-                        givenItem = true;
-                        Debug.Log("gave item");
-                    } else {
-                        ResetBar();
-                }  
+                    ProcessItem();
             }
         }
     } else if (!Input.GetKey(KeyCode.I) && timer > 0f) {
@@ -104,5 +85,30 @@ public class InteractableController : MonoBehaviour
         timer = 0f;
         progressBar.localScale = new Vector3(0, 0.25f, 1);
         givenItem = false;
+    }
+
+    private void ProcessItem() {
+        foreach (var recipe in ReturnItems) {
+            if (recipe == null) {
+                continue;
+            }
+            bool hasRequiredItems = true;
+            foreach (var item in recipe.requiredItems){
+                if (!inventory.hasItemofType(item)) {
+                    hasRequiredItems = false;
+                    break;
+                }
+            }
+            if (hasRequiredItems) {
+                foreach (var requiredItems in recipe.requiredItems) {
+                    inventory.removeItem(requiredItems);
+                }
+                inventory.AddItemToInventory(recipe.returnPrefab);
+                givenItem = true;
+                return;
+            }
+        }
+        
+        ResetBar();
     }
 }
