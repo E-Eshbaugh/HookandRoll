@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 5964dd4ed6d6140faa3c6570caa1cafc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4858261037326595889
+    second: tropical-spriteset 1_0
+  - first:
+      213: -5056805780296377368
+    second: tropical-spriteset 1_1
+  - first:
+      213: -3583131296989311677
+    second: tropical-spriteset 1_2
+  - first:
+      213: -2434157118408327565
+    second: tropical-spriteset 1_3
+  - first:
+      213: -4211514151295253237
+    second: tropical-spriteset 1_4
+  - first:
+      213: 2853316297280301676
+    second: tropical-spriteset 1_5
+  - first:
+      213: -3932484844588001101
+    second: tropical-spriteset 1_6
+  - first:
+      213: 8778820132486831666
+    second: tropical-spriteset 1_7
+  - first:
+      213: 2553814595484177278
+    second: tropical-spriteset 1_8
+  - first:
+      213: -5980807940040753704
+    second: tropical-spriteset 1_9
+  - first:
+      213: 1709450827160676970
+    second: tropical-spriteset 1_10
+  - first:
+      213: -3721443430408193689
+    second: tropical-spriteset 1_11
+  - first:
+      213: -7028128863168072012
+    second: tropical-spriteset 1_12
+  - first:
+      213: 5622035641688628191
+    second: tropical-spriteset 1_13
+  - first:
+      213: -7638090941582054155
+    second: tropical-spriteset 1_14
+  - first:
+      213: 6329663898204547902
+    second: tropical-spriteset 1_15
+  - first:
+      213: 4622747775364756194
+    second: tropical-spriteset 1_16
+  - first:
+      213: 7385427269436564883
+    second: tropical-spriteset 1_17
+  - first:
+      213: -141943171740466632
+    second: tropical-spriteset 1_18
+  - first:
+      213: 8587853901983442926
+    second: tropical-spriteset 1_19
+  - first:
+      213: -8588619389895665992
+    second: tropical-spriteset 1_20
+  - first:
+      213: 4668050057542315090
+    second: tropical-spriteset 1_21
+  - first:
+      213: -1013463268313849106
+    second: tropical-spriteset 1_22
+  - first:
+      213: 7883037620524888211
+    second: tropical-spriteset 1_23
+  - first:
+      213: -7651397721497521399
+    second: tropical-spriteset 1_24
+  - first:
+      213: -4107062818852097822
+    second: tropical-spriteset 1_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tropical-spriteset 1_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 774
+        width: 199
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc80704a35df39cb0800000000000000
+      internalID: -4858261037326595889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_1
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 791
+        width: 155
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ebda475fed92d9b0800000000000000
+      internalID: -5056805780296377368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_2
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 775
+        width: 196
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d0e53d119264ec0800000000000000
+      internalID: -3583131296989311677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_3
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 775
+        width: 162
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e78cd5ff2283ed0800000000000000
+      internalID: -2434157118408327565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_4
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 783
+        width: 103
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0504856132bd85c0800000000000000
+      internalID: -4211514151295253237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_5
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 799
+        width: 68
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6aa93b0e04099720800000000000000
+      internalID: 2853316297280301676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_6
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 591
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b899b97ed10d69c0800000000000000
+      internalID: -3932484844588001101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_7
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 599
+        width: 170
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23edce7f562a4d970800000000000000
+      internalID: 8778820132486831666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_8
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 583
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e73da0a08d8f07320800000000000000
+      internalID: 2553814595484177278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_9
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 583
+        width: 146
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ddf800cdd6effca0800000000000000
+      internalID: -5980807940040753704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_10
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 583
+        width: 192
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ae8e1687039b710800000000000000
+      internalID: 1709450827160676970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_11
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 379
+        width: 195
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 769fec6cae6ca5cc0800000000000000
+      internalID: -3721443430408193689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_12
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 379
+        width: 186
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b6723b1902177e90800000000000000
+      internalID: -7028128863168072012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_13
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 401
+        width: 151
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb9f6911ab750e40800000000000000
+      internalID: 5622035641688628191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_14
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 401
+        width: 162
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc6fd8c1cc000690800000000000000
+      internalID: -7638090941582054155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_15
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 426
+        width: 129
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3ba81887cb77d750800000000000000
+      internalID: 6329663898204547902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_16
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 211
+        width: 187
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2f7dcfb9c472040800000000000000
+      internalID: 4622747775364756194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_17
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 211
+        width: 162
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 395ef3dc8fe4e7660800000000000000
+      internalID: 7385427269436564883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_18
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 207
+        width: 153
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8320e16ff67b70ef0800000000000000
+      internalID: -141943171740466632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_19
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 208
+        width: 155
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee7ecaa9f9f2e2770800000000000000
+      internalID: 8587853901983442926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_20
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 193
+        width: 189
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b69c3a5b281fc880800000000000000
+      internalID: -8588619389895665992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_21
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 39
+        width: 190
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25c2d818bce38c040800000000000000
+      internalID: 4668050057542315090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_22
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 55
+        width: 135
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee22f3be6847fe1f0800000000000000
+      internalID: -1013463268313849106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_23
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 47
+        width: 137
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3903d6223fc266d60800000000000000
+      internalID: 7883037620524888211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_24
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 39
+        width: 157
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90338e6af46c0d590800000000000000
+      internalID: -7651397721497521399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tropical-spriteset 1_25
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 39
+        width: 186
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e03b1c5028c007c0800000000000000
+      internalID: -4107062818852097822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tropical-spriteset 1_0: -4858261037326595889
+      tropical-spriteset 1_1: -5056805780296377368
+      tropical-spriteset 1_10: 1709450827160676970
+      tropical-spriteset 1_11: -3721443430408193689
+      tropical-spriteset 1_12: -7028128863168072012
+      tropical-spriteset 1_13: 5622035641688628191
+      tropical-spriteset 1_14: -7638090941582054155
+      tropical-spriteset 1_15: 6329663898204547902
+      tropical-spriteset 1_16: 4622747775364756194
+      tropical-spriteset 1_17: 7385427269436564883
+      tropical-spriteset 1_18: -141943171740466632
+      tropical-spriteset 1_19: 8587853901983442926
+      tropical-spriteset 1_2: -3583131296989311677
+      tropical-spriteset 1_20: -8588619389895665992
+      tropical-spriteset 1_21: 4668050057542315090
+      tropical-spriteset 1_22: -1013463268313849106
+      tropical-spriteset 1_23: 7883037620524888211
+      tropical-spriteset 1_24: -7651397721497521399
+      tropical-spriteset 1_25: -4107062818852097822
+      tropical-spriteset 1_3: -2434157118408327565
+      tropical-spriteset 1_4: -4211514151295253237
+      tropical-spriteset 1_5: 2853316297280301676
+      tropical-spriteset 1_6: -3932484844588001101
+      tropical-spriteset 1_7: 8778820132486831666
+      tropical-spriteset 1_8: 2553814595484177278
+      tropical-spriteset 1_9: -5980807940040753704
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
