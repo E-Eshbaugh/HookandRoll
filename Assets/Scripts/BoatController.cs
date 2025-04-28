@@ -7,6 +7,7 @@ public class BoatController : MonoBehaviour
 {
     public Animator boatAnimator;
     public GameObject Compass; // Assign the parent Compass GameObject in the Inspector
+    public GameObject sailIndicator;
     public Boolean inBoat = false;
     public Boolean anchored = false;
     // [SerializeField] private GameObject sailIndicator;
@@ -57,6 +58,7 @@ public class BoatController : MonoBehaviour
         // ================================= Movement Checks =================================
         if (inBoat)
         {
+            sailIndicator.SetActive(true);
             scaledWindSpeed = sailsUpScaler * windSpeed;
             
             if (Input.GetKey(KeyCode.UpArrow) && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)))
@@ -118,6 +120,8 @@ public class BoatController : MonoBehaviour
             {
                 anchored = !anchored;
             }
+        } else {
+            sailIndicator.SetActive(false);
         }
 
         //=====================================================================================

@@ -127,14 +127,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boatAnimator: {fileID: 0}
+  Compass: {fileID: 0}
+  sailIndicator: {fileID: 0}
   inBoat: 0
+  anchored: 0
+  playerMainRenderer: {fileID: 0}
+  playerMovementScript: {fileID: 0}
+  player: {fileID: 0}
+  playerOffset: {x: 0, y: -1, z: 0}
   sailAngle: 180
   windSpeed: 1
   scaledWindSpeed: 0
-  windDirection: 0
+  windDirection: {x: 0, y: 0}
   sailsUpScaler: 0
+  topSpeed: 5
+  waterResistanceFactor: 0.1
+  weatherManager: {fileID: 0}
   windForce: {x: 0, y: 0}
-  mass: 1
+  mass: 1000
   cameraController: {fileID: 0}
 --- !u!61 &5428535608906665175
 BoxCollider2D:
@@ -174,7 +184,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5, y: 1.65625}
+    oldSize: {x: 3.6923077, y: 4.076923}
     newSize: {x: 1.5, y: 1.65625}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -247,7 +257,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5, y: 1.65625}
+    oldSize: {x: 3.6923077, y: 4.076923}
     newSize: {x: 1.5, y: 1.65625}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
