@@ -51,10 +51,7 @@ public class BoatController : MonoBehaviour
     {
         // sailIndicator.SetActive(inBoat);
         // ================================= Movement Checks =================================
-        if (Compass.activeInHierarchy)
-        {
-            Compass.SetActive(false);
-        }
+
         if (inBoat)
         {
             sailIndicator.SetActive(true);
@@ -124,6 +121,10 @@ public class BoatController : MonoBehaviour
                 anchored = !anchored;
             }
         } else {
+            if (Compass.activeInHierarchy)
+            {
+                Compass.SetActive(false);
+            }
             sailIndicator.SetActive(false);
         }
 

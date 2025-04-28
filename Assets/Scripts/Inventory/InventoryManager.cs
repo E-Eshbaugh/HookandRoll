@@ -13,7 +13,7 @@ public class InventoryManager : MonoBehaviour
     {
         //This currently has a bug, and only finds the hotbar, need to discuss fixes 
         slots = FindObjectsByType<InventorySlot>(FindObjectsSortMode.None);
-        
+        // DontDestroyOnLoad(gameObject);
         /*// Test code
         GameObject prefab = Resources.Load<GameObject>("Carp");
         if (prefab != null) {

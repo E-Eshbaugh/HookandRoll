@@ -8,18 +8,37 @@ public class ElevationEntry : MonoBehaviour
     public Collider2D[] mountainColliders;
     public Collider2D[] boundaryColliders;
 
+    public bool height = false;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player") {
-            foreach (var mountain in mountainColliders)
+            Debug.Log("hit player entry");
+            if (height)
             {
-                mountain.enabled = false;
+                height = !height;
+                foreach (var mountain in mountainColliders)
+                {
+                    mountain.enabled = true;
+                }
+
+                foreach (var boundary in boundaryColliders)
+                {
+                    boundary.enabled = false;
+                }
+            } else {
+                height = !height;
+                foreach (var mountain in mountainColliders)
+                {
+                    mountain.enabled = false;
+                }
+
+                foreach (var boundary in boundaryColliders)
+                {
+                    boundary.enabled = true;
+                }
             }
 
-            foreach (var boundary in boundaryColliders)
-            {
-                boundary.enabled = true;
-            }
 
             collision.gameObject.GetComponent<SpriteRenderer>().sortingOrder = 15;
         }
