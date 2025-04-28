@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      chopped_tuna_spr_0: -1183080081982434969
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

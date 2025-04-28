@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      uncooked_rice_spr_0: -5648347895391960885
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
