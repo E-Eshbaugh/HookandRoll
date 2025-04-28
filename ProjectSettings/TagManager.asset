@@ -7,6 +7,11 @@ TagManager:
   - fish
   - Indicator
   - bar
+  - CuttingStation
+  - Fridge
+  - Stove
+  - Crates
+  - RollingStation
   layers:
   - Default
   - TransparentFX

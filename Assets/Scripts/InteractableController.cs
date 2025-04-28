@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 
 public class InteractableController : MonoBehaviour
@@ -11,20 +12,22 @@ public class InteractableController : MonoBehaviour
     public float timeToFill = 2f;
     private float timer;
     private bool isActive;
-    public GameObject interactionText;
+    public Text interactionText;
     public bool playerInRange = false;
     public bool interact = false;
     public string sceneToLoad;
     private InventoryManager inventory;
     private bool givenItem;
     public List<ItemRecipe> ReturnItems = new List<ItemRecipe>();
+    public GameObject self;
 
 
     void Start()
     {
+
         if (interactionText != null)
         {
-            interactionText.SetActive(false); // Hide text at the start
+            interactionText.gameObject.SetActive(false);
         }
         inventory = FindAnyObjectByType<InventoryManager>();
 
@@ -52,10 +55,24 @@ public class InteractableController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player")) // Ensure player has the correct tag
+        if (self.CompareTag("Stove")) {
+            interactionText.text = "Hold I to Cook Rice";
+        } else if (self.CompareTag("Fridge")) {
+            interactionText.text = "Press I to Open Fridge";
+        } else if (self.CompareTag("Crates")) {
+            interactionText.text = "Hold I to Buy Rice";
+        } else if (self.CompareTag("RollingStation")) {
+            interactionText.text = "Hold I to Roll";
+        } else if (self.CompareTag("CuttingStation")) {
+            interactionText.text = "Hold I to Cut";
+        } else {
+            interactionText.text = "Press I to Interact";
+        }
+
+        if (other.CompareTag("Player"))
         {
             playerInRange = true;
-            interactionText.SetActive(true);
+            interactionText.gameObject.SetActive(true);
             isActive = true;
             timer = 0f;
             givenItem = false;
@@ -67,7 +84,7 @@ public class InteractableController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = false;
-            interactionText.SetActive(false);
+            interactionText.gameObject.SetActive(false);
             isActive = false;
             timer = 0f;
             progressBar.localScale = new Vector3(0, 1, 1);
