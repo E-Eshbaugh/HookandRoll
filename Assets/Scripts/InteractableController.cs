@@ -21,6 +21,10 @@ public class InteractableController : MonoBehaviour
     public List<ItemRecipe> ReturnItems = new List<ItemRecipe>();
     public GameObject self;
 
+    private Text dollar;
+
+    private bool crate = false;
+
 
     void Start()
     {
@@ -60,6 +64,7 @@ public class InteractableController : MonoBehaviour
         } else if (self.CompareTag("Fridge")) {
             interactionText.text = "Press I to Open Fridge";
         } else if (self.CompareTag("Crates")) {
+            crate = true;
             interactionText.text = "Hold I to Buy Rice";
         } else if (self.CompareTag("RollingStation")) {
             interactionText.text = "Hold I to Roll";
@@ -105,6 +110,18 @@ public class InteractableController : MonoBehaviour
     }
 
     private void ProcessItem() {
+        Debug.Log("Processing item...");
+        if (crate) {
+            Debug.Log("Buying rice...");
+            //subtract cost of rice
+            dollar = GameObject.Find("DollarCounter").GetComponent<Text>();
+            if (int.Parse(dollar.text) >= 5){
+                dollar.text = (int.Parse(dollar.text) - 5).ToString(); //hardcoded cost of rice
+            } else {
+                dollar.text = "0";
+                return;
+            }
+        }
         foreach (var recipe in ReturnItems) {
             if (recipe == null) {
                 continue;
