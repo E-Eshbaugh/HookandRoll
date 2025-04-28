@@ -12,16 +12,22 @@ public class SailManager : MonoBehaviour
     public MonoBehaviour boat;
     public Image targetImage;
     public float sailAmount = 0.0f;
+    private bool inBoat = false;
+    private Renderer _r;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        _r = GetComponent<Renderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        inBoat = boat.GetComponent<BoatController>().inBoat;
+        if (!inBoat) _r.enabled = false;
+        else _r.enabled = true;
+
         sailAmount = boat.GetComponent<BoatController>().sailsUpScaler;
 
         if (sailAmount <= 0.01f)
