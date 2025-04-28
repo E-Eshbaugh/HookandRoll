@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3becabc7202796042a12cbd74ab7477e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boatAnimator: {fileID: 0}
+  boatAnimator: {fileID: 5151882129003518239}
   Compass: {fileID: 0}
   sailIndicator: {fileID: 0}
   inBoat: 0
