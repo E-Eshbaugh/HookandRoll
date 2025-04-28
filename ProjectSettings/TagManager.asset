@@ -7,11 +7,11 @@ TagManager:
   - fish
   - Indicator
   - bar
-  - CuttingStation
   - Fridge
-  - Stove
   - Crates
+  - Stove
   - RollingStation
+  - CuttingStation
   layers:
   - Default
   - TransparentFX
@@ -52,47 +52,8 @@ TagManager:
   - name: Effects
     uniqueID: 2635365905
     locked: 0
-  - name: Ground
-    uniqueID: 1807833205
-    locked: 0
-  - name: Islands
-    uniqueID: 2987289399
-    locked: 0
-  - name: Paths
-    uniqueID: 3552125887
-    locked: 0
-  - name: CollisionLow
-    uniqueID: 4134202437
-    locked: 0
-  - name: NonCollisionLow
-    uniqueID: 3940293831
-    locked: 0
-  - name: MountainBoundaries
-    uniqueID: 2404987943
-    locked: 0
-  - name: IslandBoundary
-    uniqueID: 1864312599
-    locked: 0
-  - name: Dock
-    uniqueID: 759045645
-    locked: 0
-  - name: House
-    uniqueID: 2800545967
-    locked: 0
-  - name: OutdoorDecorCollision
-    uniqueID: 4209490895
-    locked: 0
-  - name: Player
-    uniqueID: 1271555849
-    locked: 0
   - name: Boat
     uniqueID: 3986027325
-    locked: 0
-  - name: OutdoorDecorPassBehind
-    uniqueID: 3305759603
-    locked: 0
-  - name: UI
-    uniqueID: 444612949
     locked: 0
   m_RenderingLayers:
   - Default

@@ -197,7 +197,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -269,14 +269,14 @@ RectTransform:
   m_GameObject: {fileID: 9103408156099420066}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5.065759, y: 5.065759, z: 5.065759}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6631563794107940800}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -880, y: -525}
+  m_AnchoredPosition: {x: 1206, y: 312}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4135563812346474465
@@ -495,11 +495,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3119164613898496039, guid: 9d7ea3ed4fc77c849b4f28cfe6c763c1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -951.56
+      value: 873
       objectReference: {fileID: 0}
     - target: {fileID: 3119164613898496039, guid: 9d7ea3ed4fc77c849b4f28cfe6c763c1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -536.67
+      value: 458
       objectReference: {fileID: 0}
     - target: {fileID: 3119164613898496039, guid: 9d7ea3ed4fc77c849b4f28cfe6c763c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -597,11 +597,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5683854371092922119, guid: 8ccdefc366b5c824e8bccbcb2f6e973a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -951.55
+      value: 873.2
       objectReference: {fileID: 0}
     - target: {fileID: 5683854371092922119, guid: 8ccdefc366b5c824e8bccbcb2f6e973a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -536.67
+      value: 459
       objectReference: {fileID: 0}
     - target: {fileID: 5683854371092922119, guid: 8ccdefc366b5c824e8bccbcb2f6e973a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
