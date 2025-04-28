@@ -92,6 +92,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1606118938474758485, guid: ce89104fae9547d4c86a6717b09fa1e6, type: 3}
+    - target: {fileID: 8018918830483726903, guid: 7335582c78b6c47a2ad0671d2b13cbe7, type: 3}
+      propertyPath: type
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 9151136759155628640, guid: 7335582c78b6c47a2ad0671d2b13cbe7, type: 3}
       propertyPath: m_Name
       value: Tuna

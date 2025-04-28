@@ -16,6 +16,7 @@ public class Item : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     {
         None,
         Generic, 
+        Ingredient,
         Rice,
         Sushi,
         Fish,

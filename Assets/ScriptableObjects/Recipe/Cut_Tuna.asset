@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ca20135acbb7b4197d6db73b4d1532, type: 3}
   m_Name: Cut_Tuna
   m_EditorClassIdentifier: 
-  requiredItems: []
-  returnPrefab: {fileID: 0}
+  requiredItemsCount: 0
+  requiredItems:
+  - {fileID: 530231522040635723, guid: f1c61ae40c71c475a9cb573b0144a872, type: 3}
+  returnPrefab: {fileID: 723066895890787243, guid: 7284e0dbbc57fb445b3d6a3bb346d7af, type: 3}
