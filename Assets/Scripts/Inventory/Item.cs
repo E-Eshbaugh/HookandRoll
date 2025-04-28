@@ -13,6 +13,8 @@ public class Item : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     public int quantity;
     public int ItemID;
 
+    public int Value = 0;
+
     public enum ItemType
     {
         None,
@@ -70,5 +72,9 @@ public class Item : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
 
     public Item() {
         type = ItemType.Generic;
+    }
+
+    public string getType() {
+        return type.ToString();
     }
 }

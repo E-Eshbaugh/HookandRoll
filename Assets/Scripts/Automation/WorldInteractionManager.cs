@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WorldInteractionManager : MonoBehaviour
 {
@@ -8,6 +9,11 @@ public class WorldInteractionManager : MonoBehaviour
 
     public StorageUIManager storageUIManager; // Assign in Inspector or find below
 
+    private InventoryManager inventoryManager; // Reference to InventoryManager
+
+    private Item item; // Reference to the item being interacted with
+
+    private Text dollar;
     void Start()
     {
         // Attempt to find StorageUIManager if not assigned in Inspector
@@ -61,11 +67,6 @@ public class WorldInteractionManager : MonoBehaviour
         {
             Debug.Log("Mouse button down detected."); // DEBUG
             // Check if clicking on UI element first - ignore world clicks if UI is hit
-            if (UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
-            {
-                Debug.Log("Clicked on UI element, ignoring world click."); // DEBUG
-                return; // Click was on UI, don't interact with world
-            }
 
             Vector2 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
              Debug.Log($"Mouse world position: {mouseWorldPos}");
@@ -78,11 +79,26 @@ public class WorldInteractionManager : MonoBehaviour
                 Storage clickedStorage = hit.collider.GetComponent<Storage>();
                 if (clickedStorage != null)
                 {
-                     Debug.Log("Found Storage component on hit object.");
-                    // Clicked on a storage object - tell the UI Manager to open for this storage
-                    // Pass the clicked storage to the UI Manager
-                    storageUIPanel.SetActive(true);
-                    storageUIManager.DisplayStorageContents(clickedStorage);
+                    //NEED TO GET ANY FINISHED FOOD FROM INVENTORY
+                    inventoryManager = FindObjectOfType<InventoryManager>();
+                    if (inventoryManager != null)
+                    {
+                         Debug.Log($"Found InventoryManager: {inventoryManager.name} (InstanceID: {inventoryManager.GetInstanceID()})", this);
+                        // Open the storage UI and pass the clicked
+                        item = inventoryManager.hasItemByItemType("Sushi");
+                        if (item != null)
+                        {
+                             inventoryManager.removeItem(item);
+                             dollar = GameObject.Find("DollarCounter").GetComponent<Text>();
+                             dollar.text = (int.Parse(dollar.text) + item.Value).ToString();
+                             Debug.Log($"Added {item.Value} to dollar counter. New value: {dollar.text}");
+                             Debug.Log($"Removed item from inventory: {item.name}");
+                        }
+                        else
+                        {
+                             Debug.Log("No sushi found in inventory.");
+                        }
+                    }
                 }
                 else
                 {

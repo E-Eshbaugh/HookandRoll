@@ -85,6 +85,16 @@ public class InventoryManager : MonoBehaviour
         return false;
     }
 
+    public Item hasItemByItemType(string type) {
+        foreach (InventorySlot slot in slots) {
+            Item check = slot.GetComponentInChildren<Item>();
+            if (check != null && check.getType() == type) {
+                return check;
+            }
+        }
+        return null;
+    }
+
     public void removeItem(Item item) {
         foreach (InventorySlot slot in slots) {
             Item remove = slot.GetComponentInChildren<Item>();
