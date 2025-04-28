@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5428535608906665175}
   - component: {fileID: 3658288482735094852}
   - component: {fileID: 8098740594995287484}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Boat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.4, y: -5.43, z: -194.67178}
-  m_LocalScale: {x: 2.445563, y: 2.445563, z: 2.445563}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -78,8 +78,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -308939971
+  m_SortingLayer: 14
   m_SortingOrder: 6
   m_Sprite: {fileID: 6400385084938979567, guid: 33cced2bc48232f43976094c240e6831, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -162,7 +162,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2039
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -176,11 +176,11 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.13943943, y: -0.57809293}
+  m_Offset: {x: 0.074111104, y: -1.1953778}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -190,7 +190,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.2211211, y: 0.50006413}
+  m_Size: {x: 1.3267581, y: 0.57292557}
   m_EdgeRadius: 0
 --- !u!50 &3658288482735094852
 Rigidbody2D:
@@ -218,7 +218,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &8098740594995287484
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -253,7 +253,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.12282121, y: -0.8401823}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -263,5 +263,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.5, y: 1.65625}
+  m_Size: {x: 2.1879532, y: 0.8648195}
   m_EdgeRadius: 0
