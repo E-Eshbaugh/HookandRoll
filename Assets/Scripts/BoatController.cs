@@ -30,6 +30,7 @@ public class BoatController : MonoBehaviour
     public int mass = 1;
     [Header("-- Camera --")]
     public CameraController cameraController;
+
     void Start()
     {
         // Ensure animator is assigned (optional if set in Inspector)
@@ -44,21 +45,23 @@ public class BoatController : MonoBehaviour
 
         windDirection = GetComponent<WeatherManager>().GetWindDirection();
         windSpeed = GetComponent<WeatherManager>().GetWindSpeed();
-
-        // Ensure compass starts hidden
-        if (Compass != null)
-        {
-            Compass.SetActive(false);
-        }
     }
 
     void Update()
     {
         // sailIndicator.SetActive(inBoat);
         // ================================= Movement Checks =================================
+        if (Compass.activeInHierarchy)
+        {
+            Compass.SetActive(false);
+        }
         if (inBoat)
         {
             sailIndicator.SetActive(true);
+            if (!Compass.activeInHierarchy)
+            {
+                Compass.SetActive(true);
+            }
             scaledWindSpeed = sailsUpScaler * windSpeed;
             
             if (Input.GetKey(KeyCode.UpArrow) && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)))
