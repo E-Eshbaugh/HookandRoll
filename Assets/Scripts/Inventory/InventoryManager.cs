@@ -75,9 +75,10 @@ public class InventoryManager : MonoBehaviour
         return null;
     }
 
-    public bool hasItemofType(Item item) {
+    public bool hasItem(Item item) {
         foreach (InventorySlot slot in slots) {
-            if (slot.GetItem().type == item.type) {
+            Item check = slot.GetComponentInChildren<Item>();
+            if (check != null && check.ItemID == item.ItemID) {
                 return true;
             }
         }

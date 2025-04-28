@@ -11,12 +11,14 @@ public class Item : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     // public Canvas canvas;
 
     public int quantity;
+    public int ItemID;
 
     public enum ItemType
     {
         None,
         Generic, 
         Ingredient,
+        Cooked,
         Rice,
         Sushi,
         Fish,

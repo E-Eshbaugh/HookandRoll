@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6930018615914550978
+--- !u!1001 &7499389422398210940
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -91,18 +91,18 @@ PrefabInstance:
     - target: {fileID: 2920596628610971313, guid: 7335582c78b6c47a2ad0671d2b13cbe7, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 5614104663962607064, guid: d59d07c708b851145afa739035e3a493, type: 3}
+      objectReference: {fileID: -3004722398341970203, guid: 79d2d9322d0bf404dad5a93da8a6a0db, type: 3}
     - target: {fileID: 8018918830483726903, guid: 7335582c78b6c47a2ad0671d2b13cbe7, type: 3}
       propertyPath: type
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8018918830483726903, guid: 7335582c78b6c47a2ad0671d2b13cbe7, type: 3}
       propertyPath: ItemID
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9151136759155628640, guid: 7335582c78b6c47a2ad0671d2b13cbe7, type: 3}
       propertyPath: m_Name
-      value: Carp
+      value: CarpRoll
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

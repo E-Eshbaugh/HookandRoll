@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredItemsCount: 0
   requiredItems:
-  - {fileID: 0}
-  returnPrefab: {fileID: 0}
+  - {fileID: 1109208248029951221, guid: f052dbb96b4204a96a95e063dee0be10, type: 3}
+  returnPrefab: {fileID: 723066895890787243, guid: 02642d517862e7340a6d7a9617340028, type: 3}

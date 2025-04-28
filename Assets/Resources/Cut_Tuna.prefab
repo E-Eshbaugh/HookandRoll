@@ -96,6 +96,10 @@ PrefabInstance:
       propertyPath: type
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8018918830483726903, guid: d02d8181af6b542bdbf6b4b0a129b934, type: 3}
+      propertyPath: ItemID
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 9151136759155628640, guid: d02d8181af6b542bdbf6b4b0a129b934, type: 3}
       propertyPath: m_Name
       value: Cut_Tuna

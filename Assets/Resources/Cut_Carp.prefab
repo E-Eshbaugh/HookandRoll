@@ -91,18 +91,18 @@ PrefabInstance:
     - target: {fileID: 2920596628610971313, guid: d02d8181af6b542bdbf6b4b0a129b934, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -5648347895391960885, guid: df1b7ef4ab322b643bc2b1c3670d3576, type: 3}
+      objectReference: {fileID: -8341964507726244086, guid: 56f5ec022cc151f4f9cad2e822646ea1, type: 3}
     - target: {fileID: 8018918830483726903, guid: d02d8181af6b542bdbf6b4b0a129b934, type: 3}
       propertyPath: type
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8018918830483726903, guid: d02d8181af6b542bdbf6b4b0a129b934, type: 3}
       propertyPath: ItemID
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9151136759155628640, guid: d02d8181af6b542bdbf6b4b0a129b934, type: 3}
       propertyPath: m_Name
-      value: UncookedRice
+      value: Cut_Carp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -96,6 +96,10 @@ PrefabInstance:
       propertyPath: type
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 8018918830483726903, guid: 7335582c78b6c47a2ad0671d2b13cbe7, type: 3}
+      propertyPath: ItemID
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 9151136759155628640, guid: 7335582c78b6c47a2ad0671d2b13cbe7, type: 3}
       propertyPath: m_Name
       value: TunaRoll

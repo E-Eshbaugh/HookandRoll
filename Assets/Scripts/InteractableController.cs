@@ -94,7 +94,7 @@ public class InteractableController : MonoBehaviour
             }
             bool hasRequiredItems = true;
             foreach (var item in recipe.requiredItems){
-                if (!inventory.hasItemofType(item)) {
+                if (!inventory.hasItem(item)) {
                     hasRequiredItems = false;
                     break;
                 }
