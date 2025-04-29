@@ -13,6 +13,7 @@ TagManager:
   - RollingStation
   - CuttingStation
   - Boat
+  - DockingPoint
   layers:
   - Default
   - TransparentFX
