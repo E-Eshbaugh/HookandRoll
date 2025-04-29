@@ -96,5 +96,8 @@ TagManager:
   - name: OutdoorDecorPassBehind
     uniqueID: 2598425697
     locked: 0
+  - name: UI
+    uniqueID: 2649226113
+    locked: 0
   m_RenderingLayers:
   - Default
