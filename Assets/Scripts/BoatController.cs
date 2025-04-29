@@ -378,7 +378,7 @@ public class BoatController : MonoBehaviour
         // Stop boat physics movement and anchor it
         rb.linearVelocity = UnityEngine.Vector2.zero;
         rb.angularVelocity = 0f;
-        anchored = true;
+        // anchored = true;
         isRowingMode = false;
 
         inBoat = false;
