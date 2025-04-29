@@ -354,8 +354,10 @@ public class BoatController : MonoBehaviour
         // Release player control and make them visible again
         ReleasePlayerFromBoat();
 
-        // 1. Teleport the player to exactly targetDockPoint (position and rotation)
-        player.transform.position = targetDockPoint.position;
+        // 1. Teleport the player to the docking point's XY position, preserving Z
+        UnityEngine.Vector3 currentPosition = player.transform.position;
+        UnityEngine.Vector3 targetPosition = targetDockPoint.position;
+        player.transform.position = new UnityEngine.Vector3(targetPosition.x, targetPosition.y, currentPosition.z);
 
         // 2. Set boat animation based on targetDockPoint's forward direction
         if (boatAnimator != null)
