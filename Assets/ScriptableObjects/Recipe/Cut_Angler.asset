@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a9ca20135acbb7b4197d6db73b4d1532, type: 3}
-  m_Name: CarpRoll
+  m_Name: Cut_Angler
   m_EditorClassIdentifier: 
   requiredItemsCount: 0
   requiredItems:
-  - {fileID: 1999435333954687996, guid: 16e4744e0e05c534c9b20afc8887b5ed, type: 3}
-  - {fileID: 1999435333954687996, guid: 02642d517862e7340a6d7a9617340028, type: 3}
-  returnPrefab: {fileID: 1651818961310030108, guid: 3d74aee3b817a604eada654ddc48778f, type: 3}
+  - {fileID: 3441825963364930082, guid: 8ba6c3c9c031a4ecabe08092b5b9651b, type: 3}
+  returnPrefab: {fileID: 723066895890787243, guid: 1136df89a5905554aaff795eb1804f85, type: 3}

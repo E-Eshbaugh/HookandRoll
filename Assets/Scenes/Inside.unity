@@ -4794,7 +4794,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
       propertyPath: ReturnItems.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
       propertyPath: 'checkItem.Array.data[0]'
@@ -4816,6 +4816,10 @@ PrefabInstance:
       propertyPath: 'ReturnItems.Array.data[1]'
       value: 
       objectReference: {fileID: 11400000, guid: 332553d5fc7229a4d85a4d3a86e30771, type: 2}
+    - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
+      propertyPath: 'ReturnItems.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 03c86a1679462e346abb604bcb77da7c, type: 2}
     - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
       propertyPath: sushiReturns.Array.data[0].givenType
       value: 3
@@ -17296,7 +17300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
       propertyPath: ReturnItems.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
       propertyPath: 'checkItem.Array.data[0]'
@@ -17313,7 +17317,7 @@ PrefabInstance:
     - target: {fileID: 8659590858991536708, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
       propertyPath: 'ReturnItems.Array.data[2]'
       value: 
-      objectReference: {fileID: 11400000, guid: 2d2c55862a67a894b889dcdef94b8897, type: 2}
+      objectReference: {fileID: 11400000, guid: 02688bc60359a334c8867c4fdac27cde, type: 2}
     - target: {fileID: 8682210569899091871, guid: e607b4d96208bd94f8cbb0f06b240d52, type: 3}
       propertyPath: m_BodyType
       value: 2
